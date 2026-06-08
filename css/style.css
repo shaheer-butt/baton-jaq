@@ -31,6 +31,8 @@
     --color-primary: #cf1010;
     --color-secondary: #0a0a0a;
     --color-text: #e2e2e2;
+    --color-slide-box: #1b1b1b;
+    --color-slide-text: #353535;
     --color-border-line: rgba(24, 24, 24, 0.10);
     --color-border-line-2: rgba(132, 132, 132, 0.17);
     --color-icon-border: rgba(186, 186, 186, 0.22);
@@ -38,13 +40,14 @@
     --font-text: 'Montserrat', sans-serif;
     --font-btn: clamp(14px, calc(14px + (16 - 14) * ((100vw - 375px) / (1440 - 375))), 16px);
     --font-subtitle: clamp(15px, calc(15px + (17 - 15) * ((100vw - 375px) / (1440 - 375))), 17px);
-    --font-subtitle-marker: clamp(16px, calc(16px + (20 - 16) * ((100vw - 375px) / (1440 - 375))), 20px);
+    --font-subtitle-marker: clamp(25px, calc(25px + (30 - 25) * ((100vw - 375px) / (1440 - 375))), 30px);
     --font-hero-main: clamp(60px, calc(60px + (220 - 60) * ((100vw - 375px) / (1440 - 375))), 220px);
-    --font-hero-second: clamp(36px, calc(36px + (72 - 36) * ((100vw - 375px) / (1440 - 375))), 72px);
+    --font-hero-second: clamp(36px, calc(36px + (72 - 36) * ((100vw - 375px) / (1440 - 375))), 58px);
     --font-counter-numbers: clamp(50px, calc(50px + (130 - 50) * ((100vw - 375px) / (1440 - 375))), 130px);
     --font-counter-text: clamp(18px, calc(18px + (25 - 18) * ((100vw - 375px) / (1440 - 375))), 25px);
     --font-card-title: clamp(18px, calc(18px + (20 - 18) * ((100vw - 375px) / (1440 - 375))), 20px);
     --font-card-text: clamp(13px, calc(15px + (15 - 13) * ((100vw - 375px) / (1440 - 375))), 15px);
+    --font-slide-text: clamp(13px, calc(20px + (23 - 20) * ((100vw - 375px) / (1440 - 375))), 23px);
 }
 
 
@@ -255,7 +258,7 @@ header {
 
 .hero-content {
     width: 100%;
-    padding: 150px 100px;
+    padding: 150px 80px;    
     position: relative;
     z-index: 2;
 }
@@ -267,35 +270,28 @@ header {
     height: 83%;
 }
 
-.hero-subtitle-wrapper {
+.content-subtitle-wrapper {
     list-style: square !important;
     margin-left: 20px;
 }
-
-.hero-content .hero-subtitle,
-.hero-subtitle-2 {
+.content-subtitle {
     z-index: 2;
     font-size: var(--font-subtitle);
     font-weight: 400;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     position: relative;
-    color: var(--color-secondary);
-    width: 15%;
+    color: var(--color-text);
+}
+.hero-content .content-subtitle {
+    color: var(--color-secondary) !important;
+    width: 13%;
 }
 
-.hero-subtitle-2 {
-    color: var(--color-text) !important;
-    width: 70% !important;
-}
-
-.hero-subtitle::marker {
+.content-subtitle::marker {
     font-size: var(--font-subtitle-marker);
 }
 
-.hero-subtitle-2::marker {
-    font-size: var(--font-subtitle-marker);
-}
 
 .hero-title {
     font-size: var(--font-hero-main);
@@ -356,6 +352,10 @@ header {
     width: 20%;
 }
 
+.counter .content-subtitle {
+    width: 45%;
+}
+
 .counter-box {
     width: 80%;
     display: flex;
@@ -365,6 +365,7 @@ header {
 
 .counter-item-box {
     width: fit-content;
+    min-width: 28%;
 }
 
 count-up {
@@ -412,32 +413,25 @@ count-up {
        About Us Section Styling Start Here
 =========================================== */
 
-.about-us {
+.about-us-top {
     margin-top: 100px;
-    padding: 0px 0px 100px 0px;
+    margin-bottom: -160px;
 }
 
-.about-us-wrapper {
+.about-us-top-content-wrapper {
     display: flex;
-    gap: 60px;
+    gap: 20px;
+    padding: 0 60px;;  
 }
-
-.about-us-image {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.about-us-top-content-wrapper ul{
     width: 50%;
 }
 
-.about-us-content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
+.about-us-top .content-subtitle {
+    width: 19%;
 }
 
-.about-us-content .about-us-text {
+.about-us-text {
     font-size: 18px;
     line-height: 1.8;
     letter-spacing: 0.04em;
@@ -445,6 +439,23 @@ count-up {
     font-family: "TT Lakes Neue Trial", sans-serif;
     font-weight: 400;
     text-transform: capitalize;
+    padding-left: 50px;
+     width: 50%;
+}
+.about-us-image-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.about-us-image-wrapper img{
+    width: 50%;
+}
+.about-us-image-wrapper .about-us-bottom-comtent-wrapper {
+    width: 600px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 50px
 }
 
 .about-icon-box-wrapper {
@@ -513,4 +524,56 @@ count-up {
     letter-spacing: 0.04em;
     color: var(--color-text);
     font-weight: 400;
+}
+/* ===========================================
+      About Us Section Styling End Here
+=========================================== */
+
+
+
+
+/* ===========================================
+      Member Section Styling Start Here
+=========================================== */
+.member{
+    padding-top: 100px;
+}
+
+.member-slider-wrapper{
+    padding: 0 60px;
+}
+
+.member-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.member .content-subtitle-wrapper {
+    width: 50%;
+}
+.member .content-subtitle {
+    width: 20%;
+}
+
+.sliders-wrapper{
+    display: flex;
+    gap: 0;
+}
+
+.member-slide-item-border{
+    padding: 20px;
+    width: 20%;
+    border-right: 1px solid var(--color-slide-box);
+}
+
+.member-slide-item{
+    font-size: var(--font-slide-text);
+    color: var(--color-slide-text);
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-slide-box);
 }

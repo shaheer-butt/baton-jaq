@@ -4,6 +4,9 @@
 <head>
     <script type="module"
         src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+        integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baton JAQ</title>
@@ -64,12 +67,13 @@
         <div class="container hero-content">
             <div class="hero-content-wrapper">
                 <div>
-                    <ul class="hero-subtitle-wrapper">
-                        <li class="hero-subtitle">SPECIALISTES EN MISE EN PLACE ET FINITION DE BETON - MONTREAL</li>
+                    <ul class="content-subtitle-wrapper">
+                        <li class="content-subtitle">SPECIALISTES EN MISE EN PLACE ET FINITION DE BETON - MONTREAL</li>
                     </ul>
                 </div>
                 <div>
-                    <h1 class="hero-title">ENSEMBLE <br><span style="font-size: 72px">NOUS BATISSONS PLUS GRAND.</span>
+                    <h1 class="hero-title">ENSEMBLE <br><span style="font-size: var(--font-hero-second)">NOUS BATISSONS
+                            PLUS GRAND.</span>
                     </h1>
                     <div class="hero-btn-wrapper">
                         <a href="#" class="btn-devis var-black">
@@ -102,8 +106,8 @@
         <div class="container">
             <div class="counter-wrapper-box">
                 <div class="counter-content">
-                    <ul class="hero-subtitle-wrapper">
-                        <li class="hero-subtitle-2">CREDIBILITE INSTANTANÉE</li>
+                    <ul class="content-subtitle-wrapper">
+                        <li class="content-subtitle">CREDIBILITE INSTANTANÉE</li>
                     </ul>
                 </div>
                 <div class="counter-box">
@@ -143,20 +147,15 @@
      =========================================== -->
 
 
-
     <!-- ===========================================
                 About Us Section End Here
      =========================================== -->
-    <section class="about-us">
-        <div class="about-us-wrapper">
-            <div class="about-us-image">
-                <ul class="hero-subtitle-wrapper">
-                    <li class="hero-subtitle-2">POURQUOI CHOISIR BETON JAQ</li>
+    <section class="about-us-top">
+        <div class="container">
+            <div class="about-us-top-content-wrapper">
+                <ul class="content-subtitle-wrapper">
+                    <li class="content-subtitle">POURQUOI CHOISIR BETON JAQ</li>
                 </ul>
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80"
-                    alt="About Us Image">
-            </div>
-            <div class="about-us-content">
                 <p class="about-us-text">
                     Choisir Béton JAQ, c’est choisir une entreprise en pleine croissance et une équipe professionnelle,
                     engagée, fière de son travail qui allie son savoir-faire pour livrer des résultats à la hauteur de
@@ -165,6 +164,13 @@
                     Cette réalité se reflète directement dans notre façon de travailler, nous sommes impliqués,
                     disponibles et nous débutons chaque projet  avec une compréhension concrète des enjeux.
                 </p>
+            </div>
+        </div>
+    </section>
+    <section class="about-us-bottom">
+        <div class="about-us-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="About Us Image">
+            <div class="about-us-bottom-comtent-wrapper">
                 <div class="about-icon-box-wrapper">
                     <div class="about-icon-box-item left-side">
                         <div class="about-icon-box-icon">
@@ -181,14 +187,64 @@
                             <img src="/media/icon.svg" alt="" class="iocn-box-svg">
                         </div>
 
-                        <h3 class="about-icon-box-title">UNE ÉQUIPE IMPLIQUEE</h3>
-                        <p class="about-icon-box-text">Présente, rigoureuse et à l'écoute à chaque étape.</p>
+                        <h3 class="about-icon-box-title">QUALITE DE FINITION</h3>
+                        <p class="about-icon-box-text">Finition précises, durables, réalisées avec soucis.</p>
                     </div>
                 </div>
                 <a href="#" class="btn-devis var-red">
                     OBTENEZ UN DEVIS
                     <span class="btn-arrow">&#8599;</span>
                 </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===========================================
+                Member Section Start Here
+     =========================================== -->
+    <section class="member">
+        <div class="container">
+            <div class="member-slider-wrapper">
+                <div class="member-content">
+                    <ul class="content-subtitle-wrapper">
+                        <li class="content-subtitle">MEMBRE DE APCHQ RBQ 5796-8299-01</li>
+                    </ul>
+                    <div class="member-slider-arrow"></div>
+                </div>
+                <div class="sliders-wrapper">
+                    <div class="member-slide-item-border">
+                        <div class="member-slide-item">
+                            MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
+                        </div>
+                    </div>
+                    <div class="member-slide-item-border">
+                        <div class="member-slide-item">
+                            MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
+                        </div>
+                    </div>
+                    <div class="member-slide-item-border">
+                        <div class="member-slide-item">
+                            MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
+                        </div>
+                    </div>
+                    <div class="member-slide-item-border">
+                        <div class="member-slide-item">
+                            MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
+                        </div>
+                    </div>
+                    <div class="member-slide-item-border">
+                        <div class="member-slide-item">
+                            MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
+                        </div>
+                    </div>
+                    <div class="member-slide-item-border">
+                        <div class="member-slide-item">
+                            MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
