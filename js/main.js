@@ -36,7 +36,7 @@ window.addEventListener('load', function () {
     type: 'loop',
 
     autoWidth: true,
-    autoplay: true,
+    autoplay: false,
     interval: 3000,
     speed: 600,
     easing: 'cubic-bezier(0.25, 0.1, 0.25, 1)',
