@@ -21,12 +21,11 @@
         <div class="container navbar-wrapper">
             <nav class="navbar">
 
-                <!-- Logo -->
+
                 <div class="nav-logo">
                     <img src="media/img/header-logo.png" alt="Header Logo" class="header-logo">
                 </div>
 
-                <!-- Nav Links -->
                 <ul class="nav-menu">
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#">À Propos</a></li>
@@ -42,7 +41,6 @@
                     <li><a href="#">Carrières</a></li>
                 </ul>
 
-                <!-- CTA Button -->
                 <div class="nav-btn">
                     <a href="#" class="btn-devis">
                         OBTENEZ UN DEVIS
@@ -55,8 +53,44 @@
                     </a>
                 </div>
 
+                <button class="nav-hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
             </nav>
         </div>
+
+
+        <div class="nav-overlay">
+            <ul class="nav-menu-mobile">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li>
+                    <a href="#">Services ▾</a>
+                    <ul class="dropdown-mobile-list">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Carrières</a></li>
+            </ul>
+            <div class="nav-overlay-btn">
+                <a href="#" class="btn-devis">
+                    OBTENEZ UN DEVIS
+                    <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                            fill="#E2E2E2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
     </header>
     <!-- ===========================================
                      Header End Here
@@ -659,7 +693,9 @@
         <div class="container footer-cta-wrapper">
             <div class="footer-cta-content-wrapper">
                 <div class="counter-shape"></div>
-                <div class="footer-cta-title"><span style="font-size: var(--font-footer-cta-title-2);">Prêt à</span> <br>démarrer</div>
+                <div class="footer-cta-title"><span style="font-size: var(--font-footer-cta-title-2);">Prêt à</span>
+                    <br>démarrer
+                </div>
                 <p>Grandir avec des projets de plus en plus ambitieux, sans jamais compromettre la qualité</p>
             </div>
             <div class="footer-cta-btn">
@@ -755,6 +791,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/hamburger-menu.js"></script>
 </body>
 
 </html>
