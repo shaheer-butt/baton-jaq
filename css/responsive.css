@@ -231,7 +231,9 @@
     .hero-scroll-down {
         padding-bottom: 60px;
     }
-
+    .borders-wrapper{
+        display: none;
+    }
     /* ── Counter ── */
     .counter {
         margin-top: -80px;
@@ -240,7 +242,7 @@
     .counter-wrapper-box {
         height: auto;
         flex-direction: column;
-        padding: 50px 40px;
+        padding: 50px 40px 10px 40px;
         gap: 40px;
         clip-path: shape(from 2% 0%,
                 line to 98% 0%,
@@ -272,6 +274,7 @@
     .counter-item-box {
         width: 25%;
         min-width: unset;
+        padding: 0 !important;
     }
 
     .counter-item-content {
@@ -550,11 +553,8 @@
     }
 
     .hero-bg {
-        width: 100%;
-        height: 100%;
-        top: auto !important;
-        bottom: 0 !important;
-        opacity: 0.4;
+        width: 80%;
+        height: 80%;
     }
 
     .hero-content {
@@ -885,6 +885,11 @@
         margin-top: -90px;
     }
 
+        .hero-bg {
+        width: 90%;
+        height: 90%;
+        background: url('../media/img/construction-site-city-2.webp') center center/cover no-repeat;
+    }
     .container.hero-content {
         display: flex;
         flex-direction: column;

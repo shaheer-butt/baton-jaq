@@ -39,6 +39,10 @@
     --color-slide-arrow: #181818;
     --color-container-bg: #D2D2D2;
     --color-project-detail-subtitle: #C1C1C1;
+    --color-hero-breadcrumbs-1: #562222;
+    --color-hero-breadcrumbs-2: #141414;
+    --color-story-text-1: #bababa;
+    --color-story-text-2: #fafafa;
     --color-projects-details: rgb(107, 107, 107, 0.37);
     --color-border-line: rgba(24, 24, 24, 0.10);
     --color-border-line-2: rgba(132, 132, 132, 0.17);
@@ -61,6 +65,10 @@
     --font-achievements-title-2: clamp(20px, calc(20px + (58 - 20) * ((100vw - 375px) / (1440 - 375))), 58px);
     --font-footer-cta-title: clamp(30px, calc(30px + (140 - 30) * ((100vw - 375px) / (1440 - 375))), 140px);
     --font-footer-cta-title-2: clamp(20px, calc(20px + (100 - 20) * ((100vw - 375px) / (1440 - 375))), 100px);
+    --font-about-us-hero-title: clamp(45px, calc(45px + (170 - 45) * ((100vw - 375px) / (1440 - 375))), 170px);
+    --font-about-us-hero-title-2: clamp(25px, calc(25px + (70 - 25) * ((100vw - 375px) / (1440 - 375))), 70px);
+    --font-about-us-story-title: clamp(50px, calc(50px + (200 - 50) * ((100vw - 375px) / (1440 - 375))), 200px);
+    --font-about-us-story-text: clamp(22px, calc(22px + (50 - 22) * ((100vw - 375px) / (1440 - 375))), 50px);
 }
 
 
@@ -358,6 +366,35 @@ header {
     padding-bottom: 500px;
 }
 
+.borders-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.section-border{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid var(--color-border-line);
+}
+.section-border:nth-child(2){
+    left: 20%;
+}
+.section-border:nth-child(3){
+    left: 40%;
+}
+.section-border:nth-child(4){
+    left: 60%;
+}
+.section-border:nth-child(5){
+    left: 80%;
+    border-right: none;
+}
+
 /* ===========================================
         Hero Section Styling End Here
 =========================================== */
@@ -369,7 +406,7 @@ header {
 .counter {
     margin-top: -200px;
     z-index: 9;
-    position: relative;
+    position: relative !important;
 }
 
 .counter .container {
@@ -378,11 +415,12 @@ header {
 
 .counter-wrapper-box {
     width: 100%;
-    height: 400px;
     background: var(--color-secondary);
-    padding: 60px 80px;
+    padding: 60px 80px 20px 80px;
     display: flex;
     gap: 20px;
+    position: relative;
+    border-bottom: 1px solid var(--color-border-line-3);
     clip-path: shape(from 2% 0%,
             line to 98% 0%,
             line to 98% 6%,
@@ -396,7 +434,7 @@ header {
 }
 
 .counter-content {
-    width: 20%;
+    width: 15%;
 }
 
 .counter .content-subtitle {
@@ -404,7 +442,7 @@ header {
 }
 
 .counter-box {
-    width: 80%;
+    width: 85%;
     display: flex;
     align-items: start;
     justify-content: space-between
@@ -414,7 +452,18 @@ header {
     width: fit-content;
     min-width: 28%;
 }
-
+.counter-item-box:nth-child(1){
+    padding-left: 30px;
+}
+.counter-item-box:nth-child(2){
+    padding-left: 30px;
+}
+.counter-item-box:nth-child(3){
+    padding-left: 20px;
+}
+.counter-item-box:nth-child(4){
+    padding-left: 10px;
+}
 count-up {
     font-size: var(--font-counter-numbers);
     letter-spacing: 0.04em;
@@ -450,6 +499,16 @@ count-up {
     color: var(--color-text);
 }
 
+.borders-wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.counter .container .section-border{
+    border-right: 1px solid var(--color-border-line-3);
+}
+
 /* ===========================================
        Counter Section Styling End Here
 =========================================== */
@@ -467,7 +526,7 @@ count-up {
 }
 
 .about-us-top .container {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .about-us-top-content-wrapper {
@@ -924,6 +983,7 @@ count-up {
     position: relative;
     padding: 30px;
     width: 60%;
+    max-width: 900px;
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -944,6 +1004,11 @@ count-up {
     inset: 0;
     background: url("../media/img/construction-site-city-1.webp") center / cover no-repeat;
     filter: grayscale(100%);
+    transition: 300ms;
+}
+
+.project-slide-item:hover::before {
+    filter: grayscale(0%);
 }
 
 .project-slide-item>* {
@@ -951,6 +1016,17 @@ count-up {
     z-index: 1;
 }
 
+.project-details-btn{
+    display: flex;
+    justify-content: end;
+}
+.project-details-btn .btn-devis{
+    padding: 5px 20px 3px 20px;
+    clip-path: none !important;
+}
+.project-details-btn .btn-arrow{
+    background: transparent !important;
+}
 .project-detail-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -1198,4 +1274,91 @@ count-up {
 
 .footer-bottom-wrapper p {
     font-size: var(--font-card-title);
+}
+
+/* ===========================================
+         Footer Styling End Here
+=========================================== */
+
+/* =======================================================================================================================
+                                            About Us Page Styling Start Here
+======================================================================================================================= */
+
+
+/* ===========================================
+         Hero Styling Start Here
+=========================================== */
+.about-us-page .hero-bg {
+    background: url('../media/img/about-us-hero.webp') top right/cover no-repeat;
+    height: 62%;
+}
+
+.about-us-page .hero-content {
+    padding: 100px 80px 120px 80px;
+}
+.hero-breadcrumbs{
+    color: var(--color-hero-breadcrumbs-2);
+    font-size: var(--font-subtitle);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    margin-left: -80px;
+}
+.about-us-page .hero-title {
+    font-size: var(--font-about-us-hero-title);
+    line-height: 0.5;
+}
+
+
+.about-hero-text {
+    font-size: var(--font-slide-text);
+    color: var(--color-secondary);
+    width: 20%;
+    margin-top: 60px;
+}
+
+.about-us-page .hero-scroll-down {
+    margin-top: -50px;
+}
+
+/* ===========================================
+           Hero Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+         Out Story Styling Start Here
+=========================================== */
+
+
+.about-us-page .counter-wrapper-box{
+    padding: 100px 80px;
+    flex-direction: column;
+    border-bottom: none !important;
+}
+
+.about-us-page .counter-wrapper-box h2{
+    text-align: center;
+    font-size: var(--font-about-us-story-title);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    width: 100%;
+}
+.about-us-page .counter-wrapper-box p{
+    font-size: var(--font-about-us-story-text);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--color-story-text-1);
+    width: 80%;
+    text-align: center;
+    align-self: center;
+}
+
+/* ===========================================
+         Out Story Styling End Here
+=========================================== */
+
+.about-us-page .services-item-wrapper {
+    padding: 0 80px;
 }
