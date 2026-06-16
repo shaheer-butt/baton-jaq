@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TT Lakes Neue Trl Ext';
+    src: url('../fonts/tt-lakes-neue-trl-ext.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -63,8 +70,8 @@
     --font-service-title: clamp(25px, calc(25px + (61 - 25) * ((100vw - 375px) / (1440 - 375))), 61px);
     --font-achievements-title: clamp(30px, calc(30px + (85 - 30) * ((100vw - 375px) / (1440 - 375))), 85px);
     --font-achievements-title-2: clamp(20px, calc(20px + (58 - 20) * ((100vw - 375px) / (1440 - 375))), 58px);
-    --font-footer-cta-title: clamp(30px, calc(30px + (140 - 30) * ((100vw - 375px) / (1440 - 375))), 140px);
-    --font-footer-cta-title-2: clamp(20px, calc(20px + (100 - 20) * ((100vw - 375px) / (1440 - 375))), 100px);
+    --font-footer-cta-title: clamp(50px, calc(50px + (180 - 50) * ((100vw - 375px) / (1440 - 375))), 180px);
+    --font-footer-cta-title-2: clamp(30px, calc(30px + (130 - 30) * ((100vw - 375px) / (1440 - 375))), 130px);
     --font-about-us-hero-title: clamp(45px, calc(45px + (170 - 45) * ((100vw - 375px) / (1440 - 375))), 170px);
     --font-about-us-hero-title-2: clamp(25px, calc(25px + (70 - 25) * ((100vw - 375px) / (1440 - 375))), 70px);
     --font-about-us-story-title: clamp(50px, calc(50px + (200 - 50) * ((100vw - 375px) / (1440 - 375))), 200px);
@@ -426,15 +433,15 @@ header {
     gap: 20px;
     position: relative;
     border-bottom: 1px solid var(--color-border-line-3);
-    clip-path: shape(from 2% 0%,
+    clip-path: shape(from 30px 0%,
             line to 98% 0%,
-            line to 98% 6%,
-            line to 100% 6%,
+            line to 98% 30px,
+            line to 100% 30px,
             vline to 100%,
             hline to 0%,
-            line to 0% 6%,
-            line to 2% 6%,
-            line to 2% 0%,
+            line to 0% 30px,
+            line to 30px 30px,
+            line to 30px 0%,
             close);
 }
 
@@ -980,6 +987,7 @@ count-up {
     width: 33%;
     font-family: var(--font-text);
     font-size: var(--font-btn);
+    color: var(--color-story-text-1);
     padding: 20px 0 20px 20px;
     border-left: 1px solid var(--color-border-line-3);
 }
@@ -1143,7 +1151,7 @@ count-up {
 .footer-cta-wrapper {
     background: url('../media/img/footer-bg.png') no-repeat !important;
     background-size: 60% !important;
-    background-position: 90% 100px !important;
+    background-position: 100% 70px !important;
     background-color: var(--color-secondary) !important;
     padding: 100px;
     display: flex;
@@ -1173,7 +1181,7 @@ count-up {
 }
 
 .footer-cta-title {
-    font-size: 140px;
+    font-size: var(--font-footer-cta-title);
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0.04em;
@@ -1182,9 +1190,10 @@ count-up {
 .footer-cta-content-wrapper p {
     position: absolute;
     top: 70px;
-    left: 46%;
+    left: 55%;
     font-size: var(--font-text);
     font-weight: 400;
+    color: var(--color-story-text-1);
     width: 20%;
 }
 
@@ -1495,7 +1504,7 @@ count-up {
 
 .story-baton-item:hover .story-baton-content,
 .story-baton-item:hover .story-baton-img {
-        border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 
 /* ===========================================
@@ -1508,7 +1517,7 @@ count-up {
         Our Mission Styling Start Here
 =========================================== */
 .our-mission .container {
-    padding: 0;
+    padding: 0 0 100px 0;
 }
 
 .our-mission-wrapper {
@@ -1526,6 +1535,10 @@ count-up {
     border-bottom: 1px solid var(--color-border-line-3);
 }
 
+.our-mission-upper .content-subtitle {
+    width: 53%;
+}
+
 .our-mission-title {
     padding: 80px 100px;
     width: 50%;
@@ -1537,4 +1550,130 @@ count-up {
     font-weight: 400;
     color: var(--color-story-text-2);
     line-height: 1.1;
+}
+
+.our-mission-bottom {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.our-mission-img {
+    width: 50%;
+}
+
+.our-mission-img img {
+    width: 100%;
+}
+
+.our-mission-content {
+    width: 50%;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.our-mission-content p {
+    font-family: "TT Lakes Neue Trl Ext", sans-serif;
+    font-size: var(--font-btn);
+    font-style: normal !important;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+}
+
+/* ===========================================
+        Our Mission Styling End Here
+=========================================== */
+
+
+/* ===========================================
+        Our Vision Styling Start Here
+=========================================== */
+
+.our-vision .container {
+    border-top: 1px solid var(--color-border-line-3);
+    padding-bottom: 300px;
+}
+
+.our-vision .our-mission-title {
+    width: 73%;
+}
+
+/* ===========================================
+        Our Vision Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+        Our Values Styling Start Here
+=========================================== */
+
+.our-values {
+    height: 290px;
+    background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
+        url('../media/img/service-texture.webp') top right/cover no-repeat;
+    position: relative;
+    overflow: visible;
+}
+
+.our-values .container {
+    border: none;
+    padding: 30px 80px 0 80px;
+}
+
+.our-values .our-values-shape-wrapper {
+    width: 100%;
+    position: relative;
+    top: -200px;
+    background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
+        url('../media/img/service-texture.webp') top right/cover no-repeat;
+    clip-path: shape(from 2% 0%,
+            line to 98% 0%,
+            line to 98% 30px,
+            line to 100% 30px,
+            vline to 100%,
+            hline to 0%,
+            line to 0% 30px,
+            line to 30px 30px,
+            line to 30px 30px,
+            close);
+}
+
+.our-values .content-subtitle {
+    color: var(--color-secondary);
+}
+
+.values-icon-box-wrapper {
+    margin-top: 20px;
+    border-top: 1px solid var(--color-border-line);
+    display: flex;
+    gap: 0;
+}
+
+.value-icon-box-item {
+    border-right: 1px solid var(--color-border-line);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 25px;
+}
+
+.value-icon-box-item img {
+    width: 80px;
+}
+
+.value-icon-box-item h4 {
+    font-size: var(--font-counter-text);
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+.value-icon-box-item p {
+    font-family: "TT Lakes Neue Trl Ext", sans-serif;
+    font-size: 12px;
+    color: var(--color-slide-text);
 }
