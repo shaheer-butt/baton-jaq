@@ -69,6 +69,7 @@
     --font-about-us-hero-title-2: clamp(25px, calc(25px + (70 - 25) * ((100vw - 375px) / (1440 - 375))), 70px);
     --font-about-us-story-title: clamp(50px, calc(50px + (200 - 50) * ((100vw - 375px) / (1440 - 375))), 200px);
     --font-about-us-story-text: clamp(22px, calc(22px + (50 - 22) * ((100vw - 375px) / (1440 - 375))), 50px);
+    --font-our-mission-title: clamp(35px, calc(35px + (90 - 35) * ((100vw - 375px) / (1440 - 375))), 90px);
 }
 
 
@@ -366,14 +367,14 @@ header {
     padding-bottom: 500px;
 }
 
-.borders-wrapper{
+.borders-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0;
 }
 
-.section-border{
+.section-border {
     width: 20%;
     height: 100%;
     position: absolute;
@@ -381,16 +382,20 @@ header {
     left: 0;
     border-right: 1px solid var(--color-border-line);
 }
-.section-border:nth-child(2){
+
+.section-border:nth-child(2) {
     left: 20%;
 }
-.section-border:nth-child(3){
+
+.section-border:nth-child(3) {
     left: 40%;
 }
-.section-border:nth-child(4){
+
+.section-border:nth-child(4) {
     left: 60%;
 }
-.section-border:nth-child(5){
+
+.section-border:nth-child(5) {
     left: 80%;
     border-right: none;
 }
@@ -452,18 +457,23 @@ header {
     width: fit-content;
     min-width: 28%;
 }
-.counter-item-box:nth-child(1){
+
+.counter-item-box:nth-child(1) {
     padding-left: 30px;
 }
-.counter-item-box:nth-child(2){
+
+.counter-item-box:nth-child(2) {
     padding-left: 30px;
 }
-.counter-item-box:nth-child(3){
+
+.counter-item-box:nth-child(3) {
     padding-left: 20px;
 }
-.counter-item-box:nth-child(4){
+
+.counter-item-box:nth-child(4) {
     padding-left: 10px;
 }
+
 count-up {
     font-size: var(--font-counter-numbers);
     letter-spacing: 0.04em;
@@ -499,13 +509,14 @@ count-up {
     color: var(--color-text);
 }
 
-.borders-wrapper{
+.borders-wrapper {
     max-width: 1440px;
     margin: 0 auto;
     left: 0;
     right: 0;
 }
-.counter .container .section-border{
+
+.counter .container .section-border {
     border-right: 1px solid var(--color-border-line-3);
 }
 
@@ -616,9 +627,11 @@ count-up {
     position: relative;
     z-index: 2;
 }
+
 .about-icon-box-icon img {
     width: 100%;
 }
+
 .icon-box-shape {
     width: 15px;
     height: 15px;
@@ -745,8 +758,8 @@ count-up {
 =========================================== */
 
 .service-wrapper {
-    background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)), 
-            url('../media/img/service-texture.webp') top right/cover no-repeat;
+    background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
+        url('../media/img/service-texture.webp') top right/cover no-repeat;
     padding: 30px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -821,9 +834,11 @@ count-up {
     opacity: 1;
     transform: translateX(0px);
 }
-.services-item:hover .service-title{
+
+.services-item:hover .service-title {
     color: var(--color-secondary);
 }
+
 .services-item:hover .service-item-title svg {
     stroke: var(--color-primary);
     transform: rotateZ(45deg);
@@ -1016,17 +1031,20 @@ count-up {
     z-index: 1;
 }
 
-.project-details-btn{
+.project-details-btn {
     display: flex;
     justify-content: end;
 }
-.project-details-btn .btn-devis{
+
+.project-details-btn .btn-devis {
     padding: 5px 20px 3px 20px;
     clip-path: none !important;
 }
-.project-details-btn .btn-arrow{
+
+.project-details-btn .btn-arrow {
     background: transparent !important;
 }
+
 .project-detail-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -1296,13 +1314,15 @@ count-up {
 .about-us-page .hero-content {
     padding: 100px 80px 120px 80px;
 }
-.hero-breadcrumbs{
+
+.hero-breadcrumbs {
     color: var(--color-hero-breadcrumbs-2);
     font-size: var(--font-subtitle);
     letter-spacing: 0.04em;
     text-decoration: none;
     margin-left: -80px;
 }
+
 .about-us-page .hero-title {
     font-size: var(--font-about-us-hero-title);
     line-height: 0.5;
@@ -1327,17 +1347,17 @@ count-up {
 
 
 /* ===========================================
-         Out Story Styling Start Here
+         Our Story Styling Start Here
 =========================================== */
 
 
-.about-us-page .counter-wrapper-box{
+.about-us-page .counter-wrapper-box {
     padding: 100px 80px;
     flex-direction: column;
     border-bottom: none !important;
 }
 
-.about-us-page .counter-wrapper-box h2{
+.about-us-page .counter-wrapper-box h2 {
     text-align: center;
     font-size: var(--font-about-us-story-title);
     font-weight: 400;
@@ -1345,7 +1365,8 @@ count-up {
     line-height: 1;
     width: 100%;
 }
-.about-us-page .counter-wrapper-box p{
+
+.about-us-page .counter-wrapper-box p {
     font-size: var(--font-about-us-story-text);
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -1356,9 +1377,164 @@ count-up {
 }
 
 /* ===========================================
-         Out Story Styling End Here
+         Our Story Styling End Here
+=========================================== */
+
+
+
+
+/* ===========================================
+         Story Baton Styling Start Here
 =========================================== */
 
 .about-us-page .services-item-wrapper {
+    padding: 20px 0 80px 80px;
+    border-top: 1px solid var(--color-border-line);
+}
+
+
+.story-baton-item {
+    display: flex;
+    padding-top: 20px;
+    border-left: 1px solid var(--color-border-line);
+}
+
+.story-baton-item:nth-child(1) {
+    padding-top: 0px;
+}
+
+.story-baton-content {
+    width: 60%;
+    margin-left: 50px;
+    border-bottom: 1px solid var(--color-border-line);
+    padding-bottom: 20px;
+    padding-right: 25px;
+    transition: 300ms;
+}
+
+.year-story-baton {
+    list-style-type: none !important;
+    margin-left: -55px;
+}
+
+.year-story-baton li {
+    color: var(--color-secondary);
+    font-size: var(--font-slide-text);
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+}
+
+.year-story-baton .year-story::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    background-color: var(--color-primary);
+}
+
+.story-baton-content .service-title {
+    font-size: var(--font-about-us-story-text);
+    letter-spacing: 0.02em;
+}
+
+.baton-story-hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.about-us-page .story-baton-item .counter-shape {
+    margin: 30px 0 20px 0;
+}
+
+.story-baton-content p {
+    font-family: "TT Lakes Neue Trial", sans-serif;
+    font-size: var(--font-btn);
+    letter-spacing: 0.02em;
+    color: var(--color-secondary);
+}
+
+.story-baton-img {
+    width: 40%;
+    border-bottom: 1px solid var(--color-border-line);
+    padding: 0 80px 20px 25px;
+    transform: 300ms;
+}
+
+.story-baton-img img {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    margin-top: -55px;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    clip-path: shape(from 20px 0%,
+            hline to 100%,
+            vline to 100%,
+            line to 0% 100%,
+            line to 0% 20px,
+            line to 20px 20px,
+
+            close);
+}
+
+
+.story-baton-item:hover .baton-story-hidden {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.story-baton-item:hover .story-baton-img img {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.story-baton-item:hover .story-baton-content,
+.story-baton-item:hover .story-baton-img {
+        border-bottom: 1px solid #000000;
+}
+
+/* ===========================================
+         Story Baton Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+        Our Mission Styling Start Here
+=========================================== */
+.our-mission .container {
+    padding: 0;
+}
+
+.our-mission-wrapper {
     padding: 0 80px;
+}
+
+.our-mission-upper {
+    display: flex;
+}
+
+.our-mission-upper .content-subtitle-wrapper {
+    padding: 80px 80px 80px 100px;
+    margin: 0;
+    height: fit-content;
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+.our-mission-title {
+    padding: 80px 100px;
+    width: 50%;
+    border-left: 1px solid var(--color-border-line-3);
+}
+
+.our-mission-title h2 {
+    font-size: var(--font-our-mission-title);
+    font-weight: 400;
+    color: var(--color-story-text-2);
+    line-height: 1.1;
 }
