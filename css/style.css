@@ -77,6 +77,7 @@
     --font-about-us-story-title: clamp(50px, calc(50px + (200 - 50) * ((100vw - 375px) / (1440 - 375))), 200px);
     --font-about-us-story-text: clamp(22px, calc(22px + (50 - 22) * ((100vw - 375px) / (1440 - 375))), 50px);
     --font-our-mission-title: clamp(35px, calc(35px + (90 - 35) * ((100vw - 375px) / (1440 - 375))), 90px);
+    --font-our-mission-title: clamp(45px, calc(45px + (153 - 45) * ((100vw - 375px) / (1440 - 375))), 153px);
 }
 
 
@@ -1579,6 +1580,7 @@ count-up {
     display: flex;
     align-items: center;
     gap: 60px;
+    margin-bottom: 70px;
 }
 
 .our-mission-img {
@@ -1683,6 +1685,10 @@ count-up {
     flex-direction: column;
     justify-content: space-between;
     padding: 40px 25px;
+}
+
+.value-icon-box-item:nth-child(1){
+    padding: 40px 25px 40px 0;
 }
 
 .value-icon-box-item img {
@@ -1881,6 +1887,14 @@ count-up {
     Introduction Section Styling Start Here
 =========================================== */
 
+.services-page .our-mission .container {
+    padding-bottom: 30px;
+}
+
+.services-page .counter-wrapper-box {
+    border-bottom: 0;
+}
+
 .services-page .our-mission-upper {
     flex-direction: column;
 }
@@ -1892,8 +1906,209 @@ count-up {
     margin: 0 80px;
 }
 
+.services-page .our-mission-img img{
+    min-height: 460px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.services-page .our-mission-content {
+    width: 660px;
+    border-right: 1px solid var(--color-border-line-3);
+}
+
 .services-page .our-mission-upper .content-subtitle-wrapper {
     padding: 0;
     margin-left: 20px;
     border: none;
+}
+
+.services-page .our-mission-title{
+    width: 100%;
+    padding: 20px 80px;
+}
+
+.services-page .our-mission-title h2{
+    font-size: 153px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.services-page .our-mission-content h4{
+    font-size: var(--font-counter-text);
+    font-weight: 500;
+}
+/* ===========================================
+    Introduction Section Styling End Here
+=========================================== */
+
+
+
+
+/* ===========================================
+    Our Value Section Styling Start Here
+=========================================== */
+
+
+
+.our-values{
+    height: auto;
+    background: none;
+}
+.services-page .our-values .our-values-shape-wrapper{
+    top: 0;
+    clip-path: none;
+}
+
+
+
+/* ===========================================
+            Finition Tabs Styling Start Here
+=========================================== */
+
+.finition-tabs-wrapper {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 80px;
+}
+
+/* ── Left side: Tab Nav ── */
+.finition-tabs-nav {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 70px 0px;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    border-right: 1px solid var(--color-border-line-3);
+}
+
+.finition-tab-btn {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-border-line-3) !important;
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-primary);
+    font-size: var(--font-achievements-title-2);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-story-text-1);
+    padding-bottom: 12px;   
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.finition-tab-btn.is-active {
+    color: var(--color-text);
+    border-bottom: 1px solid #ffffff;
+}
+
+.finition-tab-btn svg,
+.finition-tab-btn path {
+    transition: fill 0.3s ease, stroke 0.3s ease, rotate 0.3s ease;
+}
+
+.finition-tab-btn.is-active svg,
+.finition-tab-btn.is-active path {
+    fill: var(--color-primary);
+    stroke: var(--color-primary);
+    rotate: 23deg;
+}
+
+.finition-tab-btn:hover {
+    color: var(--color-text);
+}
+
+/* ── Right side: Tab Content ── */
+.finition-tabs-content {
+    width: 70%;
+    border-left: 1px solid var(--color-border-line);
+    padding: 60px 0 60px 60px;
+}
+
+.finition-tab-panel {
+    display: none;
+    flex-direction: column;
+}
+
+.finition-tab-panel.is-active {
+    display: flex;
+}
+
+.finition-item {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--color-border-line);
+}
+
+.finition-item:first-child {
+    padding-top: 0;
+}
+
+.finition-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.finition-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.finition-title {
+    font-family: var(--font-primary);
+    font-size: var(--font-achievements-title);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.finition-text {
+    font-family: "TT Lakes Neue Trl Ext", sans-serif;
+    font-size: var(--font-btn);
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    color: var(--color-text);
+    width: 100%;
+}
+
+/* ===========================================
+         Finition Tabs Styling End Here
+=========================================== */
+
+
+/* ===========================================
+         Finition Tabs 2 Styling End Here
+=========================================== */
+
+
+.finition-tabs-2 .finition-tabs-wrapper{
+        background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
+        url('../media/img/service-texture.webp') top right/cover no-repeat;
+    clip-path: shape(from 30px 0%,
+            line to 98% 0%,
+            line to 98% 30px,
+            line to 100% 30px,
+            vline to 100%,
+            hline to 0%,
+            line to 0% 30px,
+            line to 30px 30px,
+            line to 30px 0%,
+            close);
+}
+
+.finition-tabs-2 .finition-title{
+    color: var(--color-slide-text);
 }

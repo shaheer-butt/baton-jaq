@@ -86,3 +86,29 @@ window.addEventListener('load', function () {
     splide.go('>');
   });
 });
+
+
+
+/* ===========================================
+   Finition Tabs — Toggle Logic
+=========================================== */
+(function () {
+    var tabButtons = document.querySelectorAll('.finition-tab-btn');
+    var tabPanels = document.querySelectorAll('.finition-tab-panel');
+
+    if (!tabButtons.length || !tabPanels.length) return;
+
+    tabButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var target = btn.getAttribute('data-tab');
+
+            /* Reset all buttons and panels */
+            tabButtons.forEach(function (b) { b.classList.remove('is-active'); });
+            tabPanels.forEach(function (p) { p.classList.remove('is-active'); });
+
+            /* Activate clicked tab + matching panel */
+            btn.classList.add('is-active');
+            document.getElementById(target).classList.add('is-active');
+        });
+    });
+})();
