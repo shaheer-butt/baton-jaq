@@ -9,11 +9,11 @@
         src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
-<body>
+<body class="services-page">
     <!-- ===========================================
                     Header Start Here
      =========================================== -->
@@ -23,11 +23,11 @@
 
 
                 <div class="nav-logo">
-                    <img src="media/img/header-logo.png" alt="Header Logo" class="header-logo">
+                    <a href="/"><img src="../media/img/header-logo.png" alt="Header Logo" class="header-logo"></a>
                 </div>
 
                 <ul class="nav-menu">
-                    <li><a href="./">Accueil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="/pages/about-us.html">À Propos</a></li>
                     <li class="dropdown">
                         <a href="/pages/services.html">Services ▾</a>
@@ -104,14 +104,20 @@
         <div class="hero-bg"></div>
         <div class="container hero-content">
             <div class="hero-content-wrapper">
-                <div>
+                <div class="breadcrumbs-wrapper">
+                    <div class="hero-breadcrumbs">
+                        <p><a href="#" style="color: var(--color-hero-breadcrumbs-1); text-decoration: none;">Services
+                            </a> // Résidentiel lourd</p>
+                    </div>
                     <ul class="content-subtitle-wrapper">
-                        <li class="content-subtitle">SPECIALISTES EN MISE EN PLACE ET FINITION DE BETON - MONTREAL</li>
+                        <li class="content-subtitle">Dalles structurales jusqu’à 6 étages — coulées et finitions de
+                            qualité.</li>
                     </ul>
                 </div>
                 <div>
-                    <h1 class="hero-title">ENSEMBLE <br><span style="font-size: var(--font-hero-second)">NOUS BATISSONS
-                            PLUS GRAND.</span>
+                    <h1 class="hero-title">Résidentiel lourd <br><span
+                            style="font-size: var(--font-about-us-hero-title-2)">Mise en place & finition de
+                            béton</span>
                     </h1>
                     <div class="hero-btn-wrapper">
                         <a href="#" class="btn-devis var-black">
@@ -141,7 +147,6 @@
                     <path d="M2.5 7L6.5 11L10.5 7" stroke="currentcolor" stroke-width="1" fill="none"
                         stroke-linejoin="miter" />
                 </svg>
-
                 DEFILER VERS LE BAS
             </div>
             <div class="borders-wrapper">
@@ -165,320 +170,147 @@
 
 
     <!-- ===========================================
-                Counter Section Start Here
+               Counter Section Start Here
      =========================================== -->
     <section class="counter">
         <div class="container">
             <div class="counter-wrapper-box">
-                <div class="counter-content">
-                    <ul class="content-subtitle-wrapper">
-                        <li class="content-subtitle">CREDIBILITE INSTANTANÉE</li>
-                    </ul>
-                </div>
                 <div class="counter-box">
+                    <div class="counter-item-box">
+                        <count-up data-suffix="K+" data-duration="2">20</count-up>
+                        <div class="counter-item-content">
+                            <div class="counter-shape"></div>
+                            <div class="counter-text">Pi² max / coulée
+                            </div>
+                        </div>
+                    </div>
                     <div class="counter-item-box">
                         <count-up data-suffix="+" data-duration="2">300</count-up>
                         <div class="counter-item-content">
                             <div class="counter-shape"></div>
-                            <div class="counter-text">PROJETS LIVRÉS</div>
+                            <div class="counter-text">Projets complétés
+                            </div>
                         </div>
                     </div>
                     <div class="counter-item-box">
-                        <count-up data-suffix="+" data-duration="2">20</count-up>
+                        <count-up data-suffix="" data-duration="2">16</count-up>
                         <div class="counter-item-content">
                             <div class="counter-shape"></div>
-                            <div class="counter-text">CHANTIERS / ANNÉE</div>
-                        </div>
-                    </div>
-                    <div class="counter-item-box">
-                        <count-up data-suffix="M" data-duration="2">1.8</count-up>
-                        <div class="counter-item-content">
-                            <div class="counter-shape"></div>
-                            <div class="counter-text">PI2 COMPLÉTÉS</div>
+                            <div class="counter-text">Employés spécialisés
+                            </div>
                         </div>
 
                     </div>
-                    <div class="counter-item-box">
-                        <count-up data-duration="2">16</count-up>
-                        <div class="counter-item-content">
-                            <div class="counter-shape"></div>
-                            <div class="counter-text">EMPLOYÉS SPÉCIALISÉS</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="borders-wrapper">
-                    <div class="section-border"></div>
-                    <div class="section-border"></div>
-                    <div class="section-border"></div>
-                    <div class="section-border"></div>
-                    <div class="section-border"></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ===========================================
-                Counter Section End Here
+            Counter Section End Here
      =========================================== -->
 
 
     <!-- ===========================================
-                About Us Section Start Here
+            Introduction Section Start Here
      =========================================== -->
-    <section class="about-us-top">
+    <section class="our-mission">
         <div class="container">
-            <div class="about-us-top-content-wrapper">
-                <ul class="content-subtitle-wrapper">
-                    <li class="content-subtitle">POURQUOI CHOISIR BETON JAQ</li>
-                </ul>
-                <p class="about-us-text">
-                    Choisir Béton JAQ, c’est choisir une entreprise en pleine croissance et une équipe professionnelle,
-                    engagée, fière de son travail qui allie son savoir-faire pour livrer des résultats à la hauteur de
-                    chaque projet.<br><br>
-
-                    Cette réalité se reflète directement dans notre façon de travailler, nous sommes impliqués,
-                    disponibles et nous débutons chaque projet  avec une compréhension concrète des enjeux.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="about-us-bottom">
-        <div class="about-us-image-wrapper">
-            <img src="media/img/about-us.webp" alt="About Us Image">
-            <div class="about-us-bottom-comtent-wrapper">
-                <div class="about-icon-box-wrapper">
-                    <div class="about-icon-box-item left-side">
-                        <div class="about-icon-box-icon">
-                            <div class="icon-box-shape"></div>
-                            <img src="/media/about-icon-1.svg" alt="" class="iocn-box-svg">
-                        </div>
-
-                        <h3 class="about-icon-box-title">UNE ÉQUIPE IMPLIQUEE</h3>
-                        <p class="about-icon-box-text">Présente, rigoureuse et à l'écoute à chaque étape.</p>
-                    </div>
-                    <div class="about-icon-box-item right-side">
-                        <div class="about-icon-box-icon">
-                            <div class="icon-box-shape"></div>
-                            <img src="/media/about-icon-2.svg" alt="" class="iocn-box-svg">
-                        </div>
-
-                        <h3 class="about-icon-box-title">QUALITE DE FINITION</h3>
-                        <p class="about-icon-box-text">Finition précises, durables, réalisées avec soucis.</p>
-                    </div>
+            <div class="our-mission-upper">
+                <div class="intruduction-sutitle">
+                    <ul class="content-subtitle-wrapper">
+                        <li class="content-subtitle">La mission Béton JAQ</li>
+                    </ul>
                 </div>
-                <a href="#" class="btn-devis var-red">
-                    OBTENEZ UN DEVIS
-                    <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
-                            fill="#E2E2E2" />
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-    </section>
-    <!-- ===========================================
-                About Us Section End Here
-     =========================================== -->
-
-
-
-    <!-- ===========================================
-                Member Section Start Here
-     =========================================== -->
-    <section class="member">
-        <div class="container member-slider-wrapper">
-            <div class="member-content">
-                <ul class="content-subtitle-wrapper">
-                    <li class="content-subtitle">MEMBRE DE APCHQ RBQ 5796-8299-01</li>
-                </ul>
-                <div class="member-slider-arrow">
-                    <div class="member-slide-prev-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </div>
-                    <div class="member-slide-next-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </div>
+                <div class="our-mission-title">
+                    <h2><span style="color: var(--color-story-text-1)">Accompagner</span> nos clients du début à la fin.
+                    </h2>
                 </div>
             </div>
-            <!-- Splide Slide start Here -->
-            <div class="splide member-slider">
-                <!-- Splide Track -->
-                <div class="splide__track">
-                    <!-- Splide List -->
-                    <div class="splide__list">
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                        <!-- Splide Items 1 -->
-                        <div class="splide__slide member-slide-item-border">
-                            <div class="member-slide-item">
-                                MA20 <br> <span style="font-size: var(--font-subtitle);">LOGO</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="our-mission-bottom">
+                <div class="our-mission-img">
+                    <img src="../media/img/our-mission.webp" alt="Our Mission">
+                </div>
+                <div class="our-mission-content">
+                    <div class="counter-shape"></div>
+                    <p>
+                        Chez Béton JAQ, notre mission est d'accompagner nos clients dans la réalisation de leurs projets
+                        de mise en place et de finition de béton, du début à la fin, en assurant une exécution
+                        rigoureuse, une communication claire et un résultat à la hauteur de leurs attentes.<br> <br>
+                        Nous plaçons la relation client au cœur de notre approche. Une communication transparente, une
+                        présence
+                        active sur les chantiers et une compréhension claire des besoins spécifiques sont essentielles
+                        pour livrer des résultats à la hauteur des attentes.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <!-- ===========================================
-                Member Section End Here
+            Introduction Section End Here
      =========================================== -->
 
 
 
     <!-- ===========================================
-                Services Section Start Here
+            Scope of work Section Start Here
      =========================================== -->
-    <section class="services">
-        <div class="container service-wrapper">
+
+
+    <section class="our-values">
+        <div class="container our-values-shape-wrapper">
             <ul class="content-subtitle-wrapper">
-                <li class="content-subtitle">APERÇU DES SERVICES</li>
+                <li class="content-subtitle">valeurs</li>
             </ul>
-            <div class="services-item-wrapper">
-                <div class="services-item">
-                    <div class="service-item-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none"
-                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="19" x2="19" y2="5"></line>
-                            <polyline points="9 5 19 5 19 15"></polyline>
-                        </svg>
-                        <div class="service-title">
-                            RÉSIDENTIEL LOURD
-                        </div>
-                    </div>
-                    <div class="service-item-content">
-                        <div class="service-item-img">
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="">
-                        </div>
-                        <div class="service-content">
-                            <p>Nous réalisons des projets de construction en béton pour des structures de 6 étages et
-                                moins.</p>
-                            <a href="#" class="btn-devis var-red">
-                                OBTENEZ UN DEVIS
-                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
-                                        fill="#E2E2E2" />
-                                </svg>
-                            </a>
-                        </div>
+            <div class="values-icon-box-wrapper">
+                <div class="value-icon-box-item">
+                    <img src="../media/values-icon-1.svg" alt="Intégrité">
+                    <div class="value-icon-box-content">
+                        <h4>Intégrité</h4>
+                        <p>Relations basées sur la transparence, le respect des engagements et une communication claire
+                            avec tous les intervenants.</p>
                     </div>
                 </div>
-                <div class="services-item">
-                    <div class="service-item-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none"
-                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="19" x2="19" y2="5"></line>
-                            <polyline points="9 5 19 5 19 15"></polyline>
-                        </svg>
-                        <div class="service-title">
-                            COMMERCIAL / INSTITUTIONNEL
-                        </div>
-                    </div>
-                    <div class="service-item-content">
-                        <div class="service-item-img">
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="">
-                        </div>
-                        <div class="service-content">
-                            <p>Nous réalisons des projets de construction en béton pour des structures de 6 étages et
-                                moins.</p>
-                            <a href="#" class="btn-devis var-red">
-                                OBTENEZ UN DEVIS
-                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
-                                        fill="#E2E2E2" />
-                                </svg>
-                            </a>
-                        </div>
+                <div class="value-icon-box-item">
+                    <img src="../media/values-icon-2.svg" alt="Intégrité">
+                    <div class="value-icon-box-content">
+                        <h4>Proactivité</h4>
+                        <p>Relations basées sur la transparence, le respect des engagements et une communication claire
+                            avec tous les intervenants.</p>
                     </div>
                 </div>
-                <div class="services-item">
-                    <div class="service-item-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none"
-                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="19" x2="19" y2="5"></line>
-                            <polyline points="9 5 19 5 19 15"></polyline>
-                        </svg>
-                        <div class="service-title">
-                            GÉNIE CIVIL
-                        </div>
+                <div class="value-icon-box-item">
+                    <img src="../media/values-icon-3.svg" alt="Intégrité">
+                    <div class="value-icon-box-content">
+                        <h4>Collaboration
+                        </h4>
+                        <p>Relations basées sur la transparence, le respect des engagements et une communication claire
+                            avec tous les intervenants.</p>
                     </div>
-                    <div class="service-item-content">
-                        <div class="service-item-img">
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="">
-                        </div>
-                        <div class="service-content">
-                            <p>Nous réalisons des projets de construction en béton pour des structures de 6 étages et
-                                moins.</p>
-                            <a href="#" class="btn-devis var-red">
-                                OBTENEZ UN DEVIS
-                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
-                                        fill="#E2E2E2" />
-                                </svg>
-                            </a>
-                        </div>
+                </div>
+                <div class="value-icon-box-item">
+                    <img src="../media/values-icon-4.svg" alt="Intégrité">
+                    <div class="value-icon-box-content">
+                        <h4>Qualité</h4>
+                        <p>Relations basées sur la transparence, le respect des engagements et une communication claire
+                            avec tous les intervenants.</p>
+                    </div>
+                </div>
+                <div class="value-icon-box-item">
+                    <img src="../media/values-icon-5.svg" alt="Intégrité">
+                    <div class="value-icon-box-content">
+                        <h4>Ouverture</h4>
+                        <p>Relations basées sur la transparence, le respect des engagements et une communication claire
+                            avec tous les intervenants.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ===========================================
-                Services Section End Here
-     =========================================== -->
 
+
+    <!-- ===========================================
+            Scope of work Section End Here
+     =========================================== -->
 
 
     <!-- ===========================================
@@ -519,6 +351,7 @@
     <!-- ===========================================
                Achievements Section End Here
      =========================================== -->
+
 
 
 
@@ -722,6 +555,112 @@
 
 
 
+    <!-- ===========================================
+                Services Section Start Here
+     =========================================== -->
+    <section class="services">
+        <div class="container service-wrapper">
+            <ul class="content-subtitle-wrapper">
+                <li class="content-subtitle">APERÇU DES SERVICES</li>
+            </ul>
+            <div class="services-item-wrapper">
+                <div class="services-item">
+                    <div class="service-item-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none"
+                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="19" x2="19" y2="5"></line>
+                            <polyline points="9 5 19 5 19 15"></polyline>
+                        </svg>
+                        <div class="service-title">
+                            RÉSIDENTIEL LOURD
+                        </div>
+                    </div>
+                    <div class="service-item-content">
+                        <div class="service-item-img">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="">
+                        </div>
+                        <div class="service-content">
+                            <p>Nous réalisons des projets de construction en béton pour des structures de 6 étages et
+                                moins.</p>
+                            <a href="#" class="btn-devis var-red">
+                                OBTENEZ UN DEVIS
+                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                        fill="#E2E2E2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="service-item-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none"
+                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="19" x2="19" y2="5"></line>
+                            <polyline points="9 5 19 5 19 15"></polyline>
+                        </svg>
+                        <div class="service-title">
+                            COMMERCIAL / INSTITUTIONNEL
+                        </div>
+                    </div>
+                    <div class="service-item-content">
+                        <div class="service-item-img">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="">
+                        </div>
+                        <div class="service-content">
+                            <p>Nous réalisons des projets de construction en béton pour des structures de 6 étages et
+                                moins.</p>
+                            <a href="#" class="btn-devis var-red">
+                                OBTENEZ UN DEVIS
+                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                        fill="#E2E2E2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="service-item-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none"
+                            stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="19" x2="19" y2="5"></line>
+                            <polyline points="9 5 19 5 19 15"></polyline>
+                        </svg>
+                        <div class="service-title">
+                            GÉNIE CIVIL
+                        </div>
+                    </div>
+                    <div class="service-item-content">
+                        <div class="service-item-img">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="">
+                        </div>
+                        <div class="service-content">
+                            <p>Nous réalisons des projets de construction en béton pour des structures de 6 étages et
+                                moins.</p>
+                            <a href="#" class="btn-devis var-red">
+                                OBTENEZ UN DEVIS
+                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                        fill="#E2E2E2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================================
+                Services Section End Here
+     =========================================== -->
+
 
     <!-- ===========================================
                Footer CTA Section Start Here
@@ -745,6 +684,7 @@
                             d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
                             fill="#E2E2E2" />
                     </svg>
+                    <!-- <span class="btn-arrow">&#8599;</span> -->
                 </a>
             </div>
         </div>
@@ -761,7 +701,7 @@
                 <ul class="content-subtitle-wrapper">
                     <li class="content-subtitle">MEMBRE DE APCHQ RBQ 5796-8299-01</li>
                 </ul>
-                <img src="media/img/white-logo.png" alt="Footer Logo" class="footer-logo">
+                <a href="#"><img src="../media/img/white-logo.png" alt="Footer Logo" class="footer-logo"></a>
             </div>
         </div>
         <div class="footer-middle-wrapper">
@@ -826,8 +766,8 @@
             <p>Entrepreneur agréé et assuré conforme aux exigences de la Régie du bâtiment du Québec.</p>
         </div>
     </footer>
-    <script src="js/main.js"></script>
-    <script src="js/hamburger-menu.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/hamburger-menu.js"></script>
 </body>
 
 </html>

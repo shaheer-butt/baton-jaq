@@ -205,6 +205,13 @@
         margin-top: -125px;
     }
 
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
     .hero-content {
         padding: 120px 40px 60px;
     }
@@ -231,9 +238,11 @@
     .hero-scroll-down {
         padding-bottom: 60px;
     }
-    .borders-wrapper{
+
+    .borders-wrapper {
         display: none;
     }
+
     /* ── Counter ── */
     .counter {
         margin-top: -80px;
@@ -523,6 +532,190 @@
         padding: 25px 40px !important;
     }
 
+
+
+
+    /* ============================================
+       ABOUT US PAGE — Tablet (NEW, added for about-us.html)
+    ============================================ */
+
+    /* ── About Us Hero ── */
+    .about-us-page .hero-content {
+        padding: 120px 40px 60px;
+    }
+
+    .hero-breadcrumbs {
+        margin-left: 0;
+    }
+
+    .about-us-page .hero-title {
+        line-height: 0.6;
+    }
+
+    .about-hero-text {
+        width: 40%;
+        margin-top: 40px;
+    }
+
+    .about-us-page .hero-scroll-down {
+        margin-top: 0;
+    }
+
+    /* ── Our Story ── */
+    .about-us-page .counter-wrapper-box {
+        padding: 60px 40px;
+    }
+
+    .about-us-page .counter-wrapper-box p {
+        width: 100%;
+    }
+
+    /* ── Story Baton ── */
+    .about-us-page .services-item-wrapper {
+        padding: 20px 40px 60px 40px;
+    }
+
+    .story-baton-content {
+        width: 55%;
+        margin-left: 30px;
+    }
+
+    .year-story-baton {
+        margin-left: -35px;
+    }
+
+    .year-story {
+        gap: 30px !important;
+    }
+
+    .story-baton-img {
+        width: 45%;
+        padding: 0 0 20px 20px;
+    }
+
+    /* Show hidden content always — hover doesn't work on touch */
+    .baton-story-hidden {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .story-baton-img img {
+        max-height: 280px;
+        opacity: 1;
+    }
+
+    .story-baton-item:hover .story-baton-content,
+    .story-baton-item:hover .story-baton-img {
+        border-bottom: 1px solid var(--color-border-line);
+    }
+
+    /* ── Our Mission / Our Vision ── */
+    .our-mission .container {
+        padding: 0 0 50px 0;
+    }
+
+    .our-mission-wrapper {
+        padding: 0 40px;
+    }
+
+    .our-mission-upper {
+        flex-direction: column;
+    }
+
+    .our-mission-upper .content-subtitle-wrapper {
+        padding: 20px 40px;
+        margin-left: 20px;
+        border-right: none;
+    }
+
+    .our-mission-upper .content-subtitle {
+        width: 100%;
+    }
+
+    .our-mission-title {
+        width: 100%;
+        padding: 20px 40px;
+        border-left: none;
+        border-top: 1px solid var(--color-border-line-3);
+    }
+
+    .our-vision .our-mission-title {
+        width: 100%;
+    }
+
+    .our-mission-bottom {
+        padding: 40px 40px 0 40px;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .our-mission-img,
+    .our-mission-content {
+        width: 100%;
+    }
+
+    .our-mission-content {
+        padding-right: 0;
+    }
+
+    .our-vision .container {
+        padding-bottom: 70px;
+    }
+
+    /* ── Our Values ── */
+    .our-values {
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .our-values .container {
+        padding: 30px 40px 0 40px;
+    }
+
+    .our-values .our-values-shape-wrapper {
+        top: -20px;
+        padding-bottom: 0px;
+    }
+
+
+    .values-icon-box-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .value-icon-box-item {
+        width: 50%;
+        height: auto;
+        min-height: 280px;
+    }
+
+    .value-icon-box-item:nth-child(2n) {
+        border-right: none;
+    }
+
+    /* ── Behind Every Project ── */
+    .behind-project-wrapper .content-subtitle-wrapper {
+        padding: 20px 40px;
+    }
+
+    .behind-project-title {
+        padding: 20px 40px;
+    }
+
+    .behind-project-slider {
+        padding: 40px;
+        width: 100%;
+    }
+
+    .behind-project-slide-item {
+        width: 45%;
+        max-width: 400px;
+        height: 420px;
+    }
+
+    .behind-project-slide-arrow .member-slider-arrow {
+        padding: 0 40px 40px 40px;
+    }
+
 }
 
 /* END @media (max-width: 1024px) */
@@ -554,7 +747,13 @@
 
     .hero-bg {
         width: 80%;
-        height: 80%;
+        height: 80% !important;
+    }
+
+    .hero-breadcrumbs p,
+    .hero-breadcrumbs a,
+    .about-hero-text {
+        color: var(--color-text) !important;
     }
 
     .hero-content {
@@ -587,16 +786,7 @@
 
     .counter-wrapper-box {
         padding: 40px 24px;
-        clip-path: shape(from 2% 0%,
-                line to 98% 0%,
-                line to 98% 2%,
-                line to 100% 2%,
-                vline to 100%,
-                hline to 0%,
-                line to 0% 2%,
-                line to 2% 2%,
-                line to 2% 0%,
-                close);
+        clip-path: none
     }
 
     .counter-box {
@@ -856,6 +1046,138 @@
         text-align: center;
     }
 
+
+
+
+    /* ============================================
+       ABOUT US PAGE — Mobile (NEW, added for about-us.html)
+    ============================================ */
+
+    /* ── About Us Hero ── */
+    .about-us-page .hero-content {
+        padding: 100px 24px 50px;
+    }
+
+    .about-us-page .hero-title {
+        line-height: 0.7;
+    }
+
+    .about-hero-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    /* ── Our Story ── */
+    .about-us-page .counter-wrapper-box {
+        padding: 40px 24px;
+        clip-path: none;
+    }
+
+
+    /* ── Story Baton ── */
+    .about-us-page .services-item-wrapper {
+        padding: 20px 24px 40px 24px;
+    }
+
+    .story-baton-item {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .story-baton-content {
+        width: 100%;
+        margin-left: 0px;
+        padding-right: 0;
+        padding-left: 20px;
+        }
+
+    .year-story-baton {
+        margin-left: -24px;
+    }
+
+    .year-story {
+        gap: 16px !important;
+    }
+
+    .story-baton-img {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0 0 20px 20px;
+    }
+
+    .story-baton-img img {
+        margin-top: 20px;
+        max-height: 350px !important;
+        object-fit: cover !important;
+    }
+
+    /* ── Our Mission / Our Vision ── */
+    .our-mission-wrapper {
+        padding: 0 24px;
+    }
+
+    .our-mission-upper .content-subtitle-wrapper {
+        padding: 20px 24px;
+    }
+
+    .our-mission-title {
+        padding: 20px 24px;
+    }
+
+    .our-mission-title h2 {
+        font-size: clamp(28px, 9vw, 48px);
+    }
+
+    .our-mission-content {
+        gap: 20px;
+    }
+
+    .our-vision .container {
+        padding-bottom: 50px;
+    }
+
+    /* ── Our Values ── */
+    .our-values .container {
+        padding: 30px 24px 0 24px;
+    }
+
+    .our-values .our-values-shape-wrapper {
+        top: 0px;
+        padding-bottom: 30px;
+        clip-path: none;
+    }
+
+    .value-icon-box-item {
+        width: 100%;
+        min-height: unset;
+        padding: 30px 20px;
+        border-right: none !important;
+        border-bottom: 1px solid var(--color-border-line);
+    }
+
+    /* ── Behind Every Project ── */
+    .behind-project-wrapper .content-subtitle-wrapper {
+        padding: 20px 24px;
+    }
+
+    .behind-project-title {
+        padding: 20px 24px;
+    }
+
+    .behind-project-slider {
+        padding: 30px 24px;
+    }
+
+    .behind-project-slide-item {
+        width: 85vw;
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .behind-project-slide-arrow .member-slider-arrow {
+        padding: 0 24px 30px 24px;
+    }
+
 }
 
 /* END @media (max-width: 768px) */
@@ -885,11 +1207,12 @@
         margin-top: -90px;
     }
 
-        .hero-bg {
+    .hero-bg {
         width: 90%;
         height: 90%;
         background: url('../media/img/construction-site-city-2.webp') center center/cover no-repeat;
     }
+
     .container.hero-content {
         display: flex;
         flex-direction: column;
@@ -918,10 +1241,6 @@
 
     .counter-item-box {
         width: 46%;
-    }
-
-    count-up {
-        font-size: clamp(48px, 15vw, 90px);
     }
 
     .about-us-top-content-wrapper {
@@ -1022,6 +1341,105 @@
 
     .footer-cta-title {
         font-size: clamp(40px, 13vw, 65px);
+    }
+
+
+
+
+    /* ============================================
+       ABOUT US PAGE — Small Mobile (NEW, added for about-us.html)
+    ============================================ */
+
+    /* ── About Us Hero ── */
+    .about-us-page .hero-content {
+        padding: 100px 15px 50px;
+    }
+
+    .about-hero-text {
+        margin-top: 20px;
+    }
+
+
+    .services .content-subtitle-wrapper {
+        padding: 0 15px;
+    }
+
+    /* ── Our Story ── */
+    .about-us-page .counter-wrapper-box {
+        padding: 30px 15px;
+        clip-path: none !important;
+    }
+
+    /* ── Story Baton ── */
+    .about-us-page .services-item-wrapper {
+        padding: 20px 15px 30px 15px;
+    }
+
+    .story-baton-content,
+    .story-baton-img {
+        margin-left: 0px;
+    }
+
+    /* ── Our Mission / Our Vision ── */
+    .our-mission .container{
+        padding-bottom: 0;
+    }
+    .our-mission-wrapper {
+        padding: 0 15px;
+    }
+
+    .our-mission-upper .content-subtitle-wrapper {
+        padding: 24px 15px;
+    }
+
+    .our-mission-title {
+        padding: 24px 15px;
+    }
+
+    .our-mission-bottom{
+        padding: 20px 15px;
+    }
+    /* ── Our Values ── */
+    .our-values .container {
+        padding: 24px 15px 0 15px;
+    }
+
+    .value-icon-box-item {
+        display: flex;
+        padding: 24px 15px;
+        gap: 40px;
+    }
+    .value-icon-box-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* ── Behind Every Project ── */
+    .behind-project-wrapper .content-subtitle-wrapper {
+        padding: 15px;
+    }
+
+    .behind-project-title {
+        padding: 15px;
+    }
+
+    .behind-project-slider {
+        padding: 24px 15px;
+    }
+
+    .behind-project-slide-item {
+        width: 90vw;
+        height: 360px;
+        padding: 15px;
+    }
+
+    .behind-project-slide-arrow .member-slider-arrow {
+        padding: 0 15px 24px 15px;
+    }
+    .footer-cta-wrapper {
+    background-size: 100% !important;
+    background-position: 100% 70px !important;
     }
 
 }
