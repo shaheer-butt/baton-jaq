@@ -606,6 +606,8 @@ count-up {
 
 .about-us-image-wrapper img {
     width: 50%;
+    max-height: 715px;
+    object-fit: cover;
 }
 
 .about-us-bottom .container {
@@ -790,7 +792,7 @@ count-up {
 
 .service-wrapper {
     background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
-        url('../media/img/service-texture.webp') top right/cover no-repeat;
+        url('../media/img/service-texture.webp') top right/contain repeat;
     padding: 30px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -1017,7 +1019,7 @@ count-up {
 }
 
 .project-content-title {
-    font-size: 208px;
+    font-size: clamp(45px, calc(47px + (208 - 47) * ((100vw - 375px) / (1440 - 375))), 208px);
     font-weight: 400;
     text-align: center;
     line-height: 1.2em;
@@ -1654,7 +1656,7 @@ count-up {
     position: relative;
     top: -200px;
     background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
-        url('../media/img/service-texture.webp') top right/cover no-repeat;
+        url('../media/img/service-texture.webp') top right/contain repeat;
     clip-path: shape(from 30px 0%,
             line to 98% 0%,
             line to 98% 30px,
@@ -1687,7 +1689,7 @@ count-up {
     padding: 40px 25px;
 }
 
-.value-icon-box-item:nth-child(1){
+.value-icon-box-item:nth-child(1) {
     padding: 40px 25px 40px 0;
 }
 
@@ -1854,19 +1856,21 @@ count-up {
     padding: 0 80px;
 }
 
-.services-page .counter-box{
+.services-page .counter-box {
     width: 100%;
 }
-.services-page .counter-box .counter-item-box{
-    padding: 60px 0!important;
+
+.services-page .counter-box .counter-item-box {
+    padding: 60px 0 !important;
     width: 33.3%;
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 20px;
 }
-.services-page .counter-box .counter-item-box:nth-child(2){
-    padding: 60px 30px!important;
+
+.services-page .counter-box .counter-item-box:nth-child(2) {
+    padding: 60px 30px !important;
     border-left: 1px solid var(--color-border-line-3);
     border-right: 1px solid var(--color-border-line-3);
 }
@@ -1878,6 +1882,7 @@ count-up {
 .services-page .counter-text {
     width: 55%;
 }
+
 /* ===========================================
       Counter Section Styling End Here
 =========================================== */
@@ -1899,14 +1904,14 @@ count-up {
     flex-direction: column;
 }
 
-.intruduction-sutitle{
+.intruduction-sutitle {
     border-top: 1px solid var(--color-border-line-3);
     border-bottom: 1px solid var(--color-border-line-3);
     padding: 20px 0;
     margin: 0 80px;
 }
 
-.services-page .our-mission-img img{
+.services-page .our-mission-img img {
     min-height: 460px;
     max-height: 500px;
     object-fit: cover;
@@ -1923,12 +1928,12 @@ count-up {
     border: none;
 }
 
-.services-page .our-mission-title{
+.services-page .our-mission-title {
     width: 100%;
     padding: 20px 80px;
 }
 
-.services-page .our-mission-title h2{
+.services-page .our-mission-title h2 {
     font-size: 153px;
     letter-spacing: 0.04em;
     line-height: 1;
@@ -1936,10 +1941,11 @@ count-up {
     color: var(--color-primary);
 }
 
-.services-page .our-mission-content h4{
+.services-page .our-mission-content h4 {
     font-size: var(--font-counter-text);
     font-weight: 500;
 }
+
 /* ===========================================
     Introduction Section Styling End Here
 =========================================== */
@@ -1953,11 +1959,12 @@ count-up {
 
 
 
-.our-values{
+.our-values {
     height: auto;
     background: none;
 }
-.services-page .our-values .our-values-shape-wrapper{
+
+.services-page .our-values .our-values-shape-wrapper {
     top: 0;
     clip-path: none;
 }
@@ -2003,7 +2010,7 @@ count-up {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-story-text-1);
-    padding-bottom: 12px;   
+    padding-bottom: 12px;
     transition: color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -2085,18 +2092,18 @@ count-up {
 }
 
 /* ===========================================
-         Finition Tabs Styling End Here
+      Finition Tabs Styling End Here
 =========================================== */
 
 
 /* ===========================================
-         Finition Tabs 2 Styling End Here
+      Finition Tabs 2 Styling Start Here
 =========================================== */
 
 
-.finition-tabs-2 .finition-tabs-wrapper{
-        background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
-        url('../media/img/service-texture.webp') top right/cover no-repeat;
+.finition-tabs-2 .finition-tabs-wrapper {
+    background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
+        url('../media/img/service-texture.webp') top right/contain repeat;
     clip-path: shape(from 30px 0%,
             line to 98% 0%,
             line to 98% 30px,
@@ -2109,6 +2116,35 @@ count-up {
             close);
 }
 
-.finition-tabs-2 .finition-title{
+.finition-tabs-2 .finition-tab-btn {
     color: var(--color-slide-text);
+    border-bottom: 1px solid var(--color-border-line-3) !important;
+}
+
+
+.finition-tabs-2 .finition-tab-btn.is-active {
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.finition-tabs-2 .finition-title {
+    color: var(--color-secondary);
+}
+
+.finition-tabs-2 .finition-text {
+    color: var(--color-slide-text);
+}
+/* ===========================================
+     Finition Tabs 2 Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+    Completed projects Styling Start Here
+=========================================== */
+
+.services-page .project-content-title {
+        font-size: clamp(45px, calc(46px + (206 - 46) * ((100vw - 375px) / (1440 - 375))), 206px);
+    color: var(--color-story-text-1);
 }

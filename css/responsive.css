@@ -535,9 +535,9 @@
 
 
 
-    /* ============================================
-       ABOUT US PAGE — Tablet (NEW, added for about-us.html)
-    ============================================ */
+    /* ================================================================================================
+                                        ABOUT US PAGE Responsivess
+    ================================================================================================ */
 
     /* ── About Us Hero ── */
     .about-us-page .hero-content {
@@ -714,6 +714,123 @@
 
     .behind-project-slide-arrow .member-slider-arrow {
         padding: 0 40px 40px 40px;
+    }
+
+
+
+    /* ================================================================================================
+                                        Services PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+    .services-page .hero-content {
+        padding: 120px 40px 80px 40px;
+    }
+
+    .services-page .hero-title {
+        line-height: 0.7;
+    }
+
+    .breadcrumbs-wrapper {
+        gap: 25px;
+    }
+
+    /* ── Counter ── */
+    .services-page .counter-wrapper-box {
+        padding: 0 40px;
+    }
+
+    .services-page .counter-box .counter-item-box {
+        gap: 15px;
+        padding: 40px 0 !important;
+    }
+
+    .services-page .counter-box .counter-item-box:nth-child(2) {
+        padding: 40px 20px !important;
+    }
+
+    .services-page .counter-text {
+        width: 70%;
+    }
+
+    /* ── Introduction / Our Mission ── */
+    .services-page .our-mission .container{
+        padding-bottom: 0;
+    }
+    .intruduction-sutitle {
+        margin: 0 40px;
+    }
+
+    .services-page .our-mission-title {
+        padding: 20px 40px;
+        border: none;
+    }
+
+    .services-page .our-mission-title h2 {
+        font-size: clamp(60px, 10vw, 100px);
+    }
+
+    .services-page .our-mission-content {
+        width: 100%;
+        border-right: none;
+    }
+
+    .services-page .our-mission-img img {
+        min-height: 350px;
+        max-height: 400px;
+    }
+
+    .our-mission-bottom{
+        margin-bottom: 50px;
+    }
+
+
+    /* ── Finition Tabs ── */
+    .finition-tabs-wrapper {
+        padding: 0 40px;
+        flex-direction: column;
+    }
+
+    .finition-tabs-nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 40px 0;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .finition-tab-btn {
+        width: 100%;
+    }
+
+    .finition-tabs-content {
+        width: 100%;
+        border-left: none;
+        padding: 40px 0;
+    }
+
+    .finition-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .finition-title {
+        font-size: clamp(28px, 5vw, 45px);
+    }
+
+    .finition-text {
+        width: 90%;
+    }
+
+    /* ── Finition Tabs 2 (texture variant) ── */
+    .finition-tabs-2 .finition-tabs-wrapper {
+        padding: 40px;
+    }
+
+    /* ── Completed Projects Title ── */
+    .services-page .project-content-title {
+        padding: 0 40px 15px 40px;
     }
 
 }
@@ -1049,9 +1166,9 @@
 
 
 
-    /* ============================================
-       ABOUT US PAGE — Mobile (NEW, added for about-us.html)
-    ============================================ */
+    /* ================================================================================================
+                                        ABOUT US PAGE Responsivess
+    ================================================================================================ */
 
     /* ── About Us Hero ── */
     .about-us-page .hero-content {
@@ -1089,7 +1206,7 @@
         margin-left: 0px;
         padding-right: 0;
         padding-left: 20px;
-        }
+    }
 
     .year-story-baton {
         margin-left: -24px;
@@ -1178,6 +1295,127 @@
         padding: 0 24px 30px 24px;
     }
 
+
+    /* ================================================================================================
+                                      Services PAGE Responsivess
+    ================================================================================================ */
+
+
+    .services-page .hero-content {
+        padding: 100px 24px 60px 24px;
+    }
+
+    .breadcrumbs-wrapper {
+        gap: 20px;
+    }
+
+    /* ── Counter: stack to single column ── */
+    .services-page .counter-wrapper-box {
+        padding: 0 24px;
+    }
+
+    .services-page .counter-box {
+        flex-direction: column;
+    }
+
+    .services-page .counter-box .counter-item-box {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 30px 0 !important;
+        border-bottom: 1px solid var(--color-border-line-3);
+    }
+
+    .services-page .counter-box .counter-item-box:last-child {
+        border-bottom: none;
+    }
+
+    .services-page .counter-box .counter-item-box:nth-child(2) {
+        padding: 30px 0 !important;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border-line-3);
+    }
+
+    .services-page .counter-text {
+        width: 100%;
+    }
+
+    /* ── Introduction / Our Mission ── */
+    .intruduction-sutitle {
+        margin: 0 24px;
+        padding: 16px 24px;
+    }
+
+    .services-page .our-mission-upper .content-subtitle-wrapper {
+        margin-left: 0;
+    }
+
+    .services-page .our-mission-title {
+        padding: 20px 24px;
+    }
+
+    .services-page .our-mission-title h2 {
+        font-size: clamp(40px, 12vw, 60px);
+    }
+
+    .services-page .our-mission-img img {
+        min-height: 240px;
+        max-height: 280px;
+    }
+
+    .our-mission-bottom{
+        padding: 30px 24px 0 24px;
+    }
+
+    /* ── Finition Tabs ── */
+    .finition-tabs-wrapper {
+        padding: 0 24px;
+    }
+
+    .finition-tabs-nav {
+        gap: 12px;
+        padding: 30px 0;
+    }
+
+    .finition-tab-btn {
+        padding-bottom: 10px;
+    }
+
+    .finition-tabs-content {
+        padding: 30px 0;
+    }
+
+    .finition-item {
+        padding: 25px 0;
+    }
+
+    .finition-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 14px;
+    }
+
+    .finition-title {
+        font-size: clamp(22px, 7vw, 32px);
+    }
+
+    .finition-text {
+        width: 100%;
+        font-size: var(--font-card-text);
+    }
+
+    /* ── Finition Tabs 2 (texture variant) ── */
+    .finition-tabs-2 .finition-tabs-wrapper {
+        padding: 30px 24px;
+        clip-path: none;
+    }
+
+    /* ── Completed Projects Title ── */
+    .services-page .project-content-title {
+        padding: 0 24px 15px 24px;
+        font-size: clamp(40px, 16vw, 80px);
+    }
+
 }
 
 /* END @media (max-width: 768px) */
@@ -1231,6 +1469,7 @@
 
     .hero-scroll-down {
         width: 100%;
+        justify-content: flex-start;
     }
 
 
@@ -1346,9 +1585,9 @@
 
 
 
-    /* ============================================
-       ABOUT US PAGE — Small Mobile (NEW, added for about-us.html)
-    ============================================ */
+    /* ================================================================================================
+                                        ABOUT US PAGE Responsivess
+    ================================================================================================ */
 
     /* ── About Us Hero ── */
     .about-us-page .hero-content {
@@ -1381,9 +1620,10 @@
     }
 
     /* ── Our Mission / Our Vision ── */
-    .our-mission .container{
+    .our-mission .container {
         padding-bottom: 0;
     }
+
     .our-mission-wrapper {
         padding: 0 15px;
     }
@@ -1396,9 +1636,11 @@
         padding: 24px 15px;
     }
 
-    .our-mission-bottom{
-        padding: 20px 15px;
+    .our-mission-bottom {
+        padding: 20px 15px 0 15px;
+        margin-bottom: 30px;
     }
+
     /* ── Our Values ── */
     .our-values .container {
         padding: 24px 15px 0 15px;
@@ -1409,7 +1651,8 @@
         padding: 24px 15px;
         gap: 40px;
     }
-    .value-icon-box-content{
+
+    .value-icon-box-content {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -1437,9 +1680,67 @@
     .behind-project-slide-arrow .member-slider-arrow {
         padding: 0 15px 24px 15px;
     }
+
     .footer-cta-wrapper {
-    background-size: 100% !important;
-    background-position: 100% 70px !important;
+        background-size: 100% !important;
+        background-position: 100% 70px !important;
+    }
+
+    /* ================================================================================================
+                                    Services PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+    .services-page .hero-content {
+        padding: 100px 15px 50px 15px;
+    }
+
+    /* ── Counter ── */
+    .services-page .counter-wrapper-box {
+        padding: 0 15px;
+    }
+
+    .services-page .counter-item-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* ── Introduction / Our Mission ── */
+    .intruduction-sutitle {
+        margin: 0 15px;
+    }
+
+    .services-page .our-mission-title {
+        padding: 16px 15px;
+    }
+
+    .services-page .our-mission-img img {
+        min-height: 200px;
+        max-height: 220px;
+    }
+
+    /* ── Finition Tabs ── */
+    .finition-tabs-wrapper {
+        padding: 0 15px;
+    }
+
+    .finition-tab-btn {
+        gap: 8px;
+    }
+
+    .finition-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* ── Finition Tabs 2 (texture variant) ── */
+    .finition-tabs-2 .finition-tabs-wrapper {
+        padding: 24px 15px;
+    }
+
+    /* ── Completed Projects Title ── */
+    .services-page .project-content-title {
+        padding: 0 15px 15px 15px;
     }
 
 }
