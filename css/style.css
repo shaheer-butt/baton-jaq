@@ -77,7 +77,7 @@
     --font-about-us-story-title: clamp(50px, calc(50px + (200 - 50) * ((100vw - 375px) / (1440 - 375))), 200px);
     --font-about-us-story-text: clamp(22px, calc(22px + (50 - 22) * ((100vw - 375px) / (1440 - 375))), 50px);
     --font-our-mission-title: clamp(35px, calc(35px + (90 - 35) * ((100vw - 375px) / (1440 - 375))), 90px);
-    --font-our-mission-title: clamp(45px, calc(45px + (153 - 45) * ((100vw - 375px) / (1440 - 375))), 153px);
+    --font-service-page-title: clamp(45px, calc(45px + (153 - 45) * ((100vw - 375px) / (1440 - 375))), 153px);
 }
 
 
@@ -306,6 +306,7 @@ header {
     background: url('../media/img/construction-site-city-2.webp') top right/cover no-repeat;
     height: 70%;
     width: 70%;
+    z-index: 2;
 }
 
 .hero .container {
@@ -325,6 +326,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
     height: 83%;
+    position: relative;
+    z-index: 4;
 }
 
 .content-subtitle-wrapper {
@@ -372,15 +375,25 @@ header {
 
 .hero-scroll-down {
     text-align: right;
-    padding-bottom: 500px;
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 10px;
+    position: relative;
+    z-index: 2;
 }
 
-.hero-scroll-down svg {
-    margin-top: 2px;
+.hero-scroll-down a {
+    color: var(--color-text);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-scroll-down svg path {
+    margin-top: 10px;
 }
 
 .borders-wrapper {
@@ -388,6 +401,10 @@ header {
     justify-content: center;
     align-items: center;
     gap: 0;
+    position: absolute;
+    inset: 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section-border {
@@ -397,6 +414,7 @@ header {
     top: 0;
     left: 0;
     border-right: 1px solid var(--color-border-line);
+    z-index: 1;
 }
 
 .section-border:nth-child(2) {
@@ -416,14 +434,17 @@ header {
     border-right: none;
 }
 
+.container.border-container{
+    border: none !important;
+}
+
 .horizontal-border {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-
     width: 100%;
-
+    z-index: 1;
 }
 
 .horizontal-section-border {
@@ -540,12 +561,7 @@ count-up {
     color: var(--color-text);
 }
 
-.borders-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-}
+
 
 .counter .container .section-border {
     border-right: 1px solid var(--color-border-line-3);
@@ -1344,6 +1360,7 @@ count-up {
 .about-us-page .hero-bg {
     background: url('../media/img/about-us-hero.webp') top right/cover no-repeat;
     height: 64%;
+    z-index: 2;
 }
 
 .about-us-page .hero-content {
@@ -1827,6 +1844,7 @@ count-up {
 .services-page .hero-bg {
     background: url('../media/img/services-hero-img.webp') top right/cover no-repeat;
     height: 64%;
+    z-index: 2;
 }
 
 
@@ -1934,7 +1952,7 @@ count-up {
 }
 
 .services-page .our-mission-title h2 {
-    font-size: 153px;
+    font-size: var(--font-service-page-title);
     letter-spacing: 0.04em;
     line-height: 1;
     font-weight: 400;
@@ -2134,6 +2152,7 @@ count-up {
 .finition-tabs-2 .finition-text {
     color: var(--color-slide-text);
 }
+
 /* ===========================================
      Finition Tabs 2 Styling End Here
 =========================================== */
@@ -2145,6 +2164,191 @@ count-up {
 =========================================== */
 
 .services-page .project-content-title {
-        font-size: clamp(45px, calc(46px + (206 - 46) * ((100vw - 375px) / (1440 - 375))), 206px);
+    font-size: clamp(45px, calc(46px + (206 - 46) * ((100vw - 375px) / (1440 - 375))), 206px);
     color: var(--color-story-text-1);
+}
+
+/* ===========================================
+    Completed projects Styling End Here
+=========================================== */
+
+
+
+/* =======================================================================================================================
+                                            Project Page Styling Start Here
+======================================================================================================================= */
+
+
+/* ===========================================
+    Hero Section Styling Start Here
+=========================================== */
+
+.project-page .hero-content {
+    padding: 100px 80px;
+}
+
+.project-page .hero-bg {
+    background: url('../media/img/project-hero-section.webp') top right/cover no-repeat;
+    height: 64%;
+    z-index: 2;
+}
+
+.project-page .hero-title {
+    font-size: var(--font-footer-cta-title);
+    line-height: 1;
+}
+
+.project-page .counter-box{
+    width: 50%;
+}
+
+.project-page .counter-item-box{
+    padding: 0 !important;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+.project-page .counter-item-box count-up{
+    font-size: var(--font-achievements-title) !important;
+}
+.project-page .counter-item-content {
+    margin: 0;
+}
+
+.project-page .counter-item-content .counter-shape{
+    background-color: var(--color-text);
+}
+
+.project-page .counter-item-content .counter-text{
+    font-size: var(--font-btn);
+    width: 70%;
+}
+
+/* ===========================================
+    Hero Section Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+    Projects Section Styling Start Here
+=========================================== */
+.listed-projects{
+    margin-top: -150px;
+    background-color: var(--color-secondary);
+    position: relative;
+    z-index: 1;
+    clip-path: shape(from 30px 0%,
+            line to 98% 0%,
+            line to 98% 30px,
+            line to 100% 30px,
+            vline to 100%,
+            hline to 0%,
+            line to 0% 30px,
+            line to 30px 30px,
+            line to 30px 0%,
+            close);
+}
+
+.project-page-wrapper{
+    padding: 50px 80px 0 80px;
+    display: flex;
+    gap: 40px;
+}
+
+.projects-filters{
+    width: 16.3%;
+    height: 100vh;
+    border-right: 1px solid var(--color-border-line-3);
+}
+
+.listed-projects-wrapper{
+    width: 83.7%;
+}
+
+.listed-project-title {
+    padding: 0 40px 30px 0px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+.listed-project-title h2{
+    font-size: var(--font-achievements-title);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--color-text);
+}
+
+.listed-project-title p{
+    font-size: var(--font-subtitle);
+    color: var(--color-project-detail-subtitle);
+    letter-spacing: 0.04em;
+}
+
+.listed-project-item{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+.listed-project-item-content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.listed-project-item .project-details-subtitle p{
+    font-size: var(--font-btn);
+    letter-spacing: 0.04em;
+    color: var(--color-project-detail-subtitle);
+}
+
+.listed-project-item .listed-project-item-content h3{
+    font-size: var(--font-slide-text) !important;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+}
+
+.project-details-btn{
+    margin-top: 30px;
+}
+
+.listed-projects .project-details-left {
+    width: fit-content;
+    border: 1px solid var(--color-border-line-3);
+}
+
+.listed-projects .project-details-left-item:nth-child(1){
+    padding-left: 0;
+}
+
+.listed-projects .project-details-btn{
+    justify-content: flex-start;
+}
+
+.listed-project-item-img {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.listed-project-item-img img{
+    width: 90%;
+    height: 280px;
+    object-fit: cover;
+        clip-path: shape(from 20px 0%,
+            hline to 100%,
+            vline to 100%,
+            line to 0% 100%,
+            line to 0% 20px,
+            line to 20px 20px,
+
+            close);
+}
+
+.load-more-listed-btn{
+    display: flex;
+    justify-content: center;
+    padding: 30px 80px;
 }

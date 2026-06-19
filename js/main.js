@@ -90,50 +90,23 @@ window.addEventListener('load', function () {
 
 
 /* ===========================================
-   Finition Tabs — Toggle Logic
+   Finition Tabs — Toggle Logic (scoped per section)
 =========================================== */
-(function () {
-    var tabButtons = document.querySelectorAll('.finition-tab-btn');
-    var tabPanels = document.querySelectorAll('.finition-tab-panel');
+document.querySelectorAll('.finition-tabs').forEach(function (section) {
+  var tabButtons = section.querySelectorAll(':scope > .finition-tabs-wrapper .finition-tab-btn, :scope .finition-tab-btn');
+  var tabPanels = section.querySelectorAll('.finition-tab-panel');
 
-    if (!tabButtons.length || !tabPanels.length) return;
+  if (!tabButtons.length || !tabPanels.length) return;
 
-    tabButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var target = btn.getAttribute('data-tab');
+  tabButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var target = btn.getAttribute('data-tab');
 
-            /* Reset all buttons and panels */
-            tabButtons.forEach(function (b) { b.classList.remove('is-active'); });
-            tabPanels.forEach(function (p) { p.classList.remove('is-active'); });
+      tabButtons.forEach(function (b) { b.classList.remove('is-active'); });
+      tabPanels.forEach(function (p) { p.classList.remove('is-active'); });
 
-            /* Activate clicked tab + matching panel */
-            btn.classList.add('is-active');
-            document.getElementById(target).classList.add('is-active');
-        });
+      btn.classList.add('is-active');
+      section.querySelector('#' + target).classList.add('is-active');
     });
-})();
-
-
-/* ===========================================
-   Finition Tabs 2 — Toggle Logic
-=========================================== */
-(function () {
-    var tabButtons = document.querySelectorAll('.finition-tab-btn-2');
-    var tabPanels = document.querySelectorAll('.finition-tab-panel-2');
-
-    if (!tabButtons.length || !tabPanels.length) return;
-
-    tabButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var target = btn.getAttribute('data-tab');
-
-            /* Reset all buttons and panels */
-            tabButtons.forEach(function (b) { b.classList.remove('is-active'); });
-            tabPanels.forEach(function (p) { p.classList.remove('is-active'); });
-
-            /* Activate clicked tab + matching panel */
-            btn.classList.add('is-active');
-            document.getElementById(target).classList.add('is-active');
-        });
-    });
-})();
+  });
+});

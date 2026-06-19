@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baton JAQ</title>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body class="project-page">
+    <!-- ===========================================
+                    Header Start Here
+     =========================================== -->
+    <header>
+        <div class="container navbar-wrapper">
+            <nav class="navbar">
+
+
+                <div class="nav-logo">
+                    <a href="#"><img src="../media/img/header-logo.png" alt="Header Logo" class="header-logo"></a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/pages/about-us.html">À Propos</a></li>
+                    <li class="dropdown">
+                        <a href="/pages/services.html">Services ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Service 1</a></li>
+                            <li><a href="#">Service 2</a></li>
+                            <li><a href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Carrières</a></li>
+                </ul>
+
+                <div class="nav-btn">
+                    <a href="#" class="btn-devis">
+                        OBTENEZ UN DEVIS
+                        <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                fill="#E2E2E2" />
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="nav-hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </nav>
+        </div>
+
+
+        <div class="nav-overlay">
+            <ul class="nav-menu-mobile">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li>
+                    <a href="#">Services ▾</a>
+                    <ul class="dropdown-mobile-list">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="project.html">Projets</a></li>
+                <li><a href="#">Carrières</a></li>
+            </ul>
+            <div class="nav-overlay-btn">
+                <a href="#" class="btn-devis">
+                    OBTENEZ UN DEVIS
+                    <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                            fill="#E2E2E2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <!-- ===========================================
+                     Header End Here
+     =========================================== -->
+
+
+    <!-- ===========================================
+                Hero Section Start Here
+     =========================================== -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-content-wrapper">
+                <div class="breadcrumbs-wrapper">
+                    <div class="hero-breadcrumbs">
+                        <p><a href="#" style="color: var(--color-hero-breadcrumbs-1); text-decoration: none;">Accueil
+                            </a> // Projects</p>
+                    </div>
+                    <ul class="content-subtitle-wrapper">
+                        <li class="content-subtitle">Un aperçu concret de notre travail — des projets résidentiels aux
+                            infrastructures de génie civil, </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="hero-title">
+                        Nos réalisations
+                    </h1>
+                    <div class="counter-box">
+                        <div class="counter-item-box">
+                            <count-up data-suffix="+" data-duration="2">300</count-up>
+                            <div class="counter-item-content">
+                                <div class="counter-shape"></div>
+                                <div class="counter-text">Projets livrés
+                                </div>
+                            </div>
+                        </div>
+                        <div class="counter-item-box">
+                            <count-up data-suffix="M+" data-duration="2">1.8</count-up>
+                            <div class="counter-item-content">
+                                <div class="counter-shape"></div>
+                                <div class="counter-text">Pi² de surface
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-down">
+                <a href="#"> <svg width="20" height="20" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 2V10" stroke="currentcolor" stroke-width="1" />
+                        <path d="M2.5 7L6.5 11L10.5 7" stroke="currentcolor" stroke-width="1" fill="none"
+                            stroke-linejoin="miter" />
+                    </svg>
+                    DEFILER VERS LE BAS</a>
+            </div>
+        </div>
+        <div class="borders-wrapper">
+            <div class="section-border"></div>
+            <div class="section-border"></div>
+            <div class="section-border"></div>
+            <div class="section-border"></div>
+            <div class="section-border"></div>
+        </div>
+        <div class="horizontal-border">
+            <div class="horizontal-section-border"></div>
+            <div class="horizontal-section-border"></div>
+        </div>
+    </section>
+    <!-- ===========================================
+                Hero Section End Here
+     =========================================== -->
+
+
+
+    <!-- ===========================================
+              Project Section Start Here
+     =========================================== -->
+
+
+    <section class="listed-projects">
+        <div class="container project-page-wrapper">
+            <div class="projects-filters"></div>
+            <div class="listed-projects-wrapper">
+                <div class="listed-project-title">
+                    <h2>Résidentiel</h2>
+                    <p>22 projets trouvés</p>
+                </div>
+                <div class="listed-project-item">
+                    <div class="listed-project-item-content">
+                        <div class="project-details-subtitle">
+                            <div class="achievements-card-shape"></div>
+                            <p class="project-details-subtitle-text">RÉSIDENTIEL LOURD</p>
+                        </div>
+                        <h3>Condos Dubelle — Quartier DIX30</h3>
+                        <div class="project-details-left">
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Emplacement</li>
+                                </ul>
+                                <h4>MontrÉal, QuÉbec</h4>
+                            </div>
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Status</li>
+                                </ul>
+                                <h4>ComplÉTÉ</h4>
+                            </div>
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Année</li>
+                                </ul>
+                                <h4>2024-25</h4>
+                            </div>
+                        </div>
+                        <div class="project-details-btn">
+                            <a href="#" class="btn-devis var-red">
+                                OBTENEZ UN DEVIS
+                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                        fill="#E2E2E2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="listed-project-item-img">
+                        <img src="../media/img/listed-project.webp" alt="">
+                    </div>
+                </div>
+                <div class="listed-project-item">
+                    <div class="listed-project-item-content">
+                        <div class="project-details-subtitle">
+                            <div class="achievements-card-shape"></div>
+                            <p class="project-details-subtitle-text">RÉSIDENTIEL LOURD</p>
+                        </div>
+                        <h3>Condos Dubelle — Quartier DIX30</h3>
+                        <div class="project-details-left">
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Emplacement</li>
+                                </ul>
+                                <h4>MontrÉal, QuÉbec</h4>
+                            </div>
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Status</li>
+                                </ul>
+                                <h4>ComplÉTÉ</h4>
+                            </div>
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Année</li>
+                                </ul>
+                                <h4>2024-25</h4>
+                            </div>
+                        </div>
+                        <div class="project-details-btn">
+                            <a href="#" class="btn-devis var-red">
+                                OBTENEZ UN DEVIS
+                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                        fill="#E2E2E2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="listed-project-item-img">
+                        <img src="../media/img/listed-project.webp" alt="">
+                    </div>
+                </div>
+                <div class="listed-project-item">
+                    <div class="listed-project-item-content">
+                        <div class="project-details-subtitle">
+                            <div class="achievements-card-shape"></div>
+                            <p class="project-details-subtitle-text">RÉSIDENTIEL LOURD</p>
+                        </div>
+                        <h3>Condos Dubelle — Quartier DIX30</h3>
+                        <div class="project-details-left">
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Emplacement</li>
+                                </ul>
+                                <h4>MontrÉal, QuÉbec</h4>
+                            </div>
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Status</li>
+                                </ul>
+                                <h4>ComplÉTÉ</h4>
+                            </div>
+                            <div class="project-details-left-item">
+                                <ul class="content-subtitle-wrapper">
+                                    <li class="content-subtitle">Année</li>
+                                </ul>
+                                <h4>2024-25</h4>
+                            </div>
+                        </div>
+                        <div class="project-details-btn">
+                            <a href="#" class="btn-devis var-red">
+                                OBTENEZ UN DEVIS
+                                <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                        fill="#E2E2E2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="listed-project-item-img">
+                        <img src="../media/img/listed-project.webp" alt="">
+                    </div>
+                </div>
+                <div class="load-more-listed-btn">
+                    <a href="#" class="btn-devis">
+                        OBTENEZ UN DEVIS
+                        <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                fill="#E2E2E2" />
+                        </svg>
+                        <!-- <span class="btn-arrow">&#8599;</span> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+              Project Section End Here
+     =========================================== -->
+
+
+
+
+    <!-- ===========================================
+               Footer CTA Section Start Here
+     =========================================== -->
+
+    <section class="footer-cta">
+        <div class="container footer-cta-wrapper">
+            <div class="footer-cta-content-wrapper">
+                <div class="counter-shape"></div>
+                <div class="footer-cta-title"><span style="font-size: var(--font-footer-cta-title-2);">Prêt à</span>
+                    <br>démarrer
+                </div>
+                <p>Grandir avec des projets de plus en plus ambitieux, sans jamais compromettre la qualité</p>
+            </div>
+            <div class="footer-cta-btn">
+                <a href="#" class="btn-devis">
+                    OBTENEZ UN DEVIS
+                    <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                            fill="#E2E2E2" />
+                    </svg>
+                    <!-- <span class="btn-arrow">&#8599;</span> -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+               Footer CTA Section End Here
+     =========================================== -->
+
+
+    <footer class="footer">
+        <div class="footer-upper-wrapper">
+            <div class="container footer-logo-wrapper">
+                <ul class="content-subtitle-wrapper">
+                    <li class="content-subtitle">MEMBRE DE APCHQ RBQ 5796-8299-01</li>
+                </ul>
+                <a href="#"><img src="../media/img/white-logo.png" alt="Footer Logo" class="footer-logo"></a>
+            </div>
+        </div>
+        <div class="footer-middle-wrapper">
+            <div class="container">
+                <div class="footer-middel-btn">
+                    <a href="#" class="btn-devis">
+                        OBTENEZ UN DEVIS
+                        <svg class="btn-arrow" width="40px" height="40px" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.67582 -2.99375e-05H2.33605V0.953585L8.03808 0.953586L1.59135e-05 8.99165L0.684139 9.67578L8.72221 1.63771L8.72221 7.33974L9.67582 7.33974V-2.99375e-05Z"
+                                fill="#E2E2E2" />
+                        </svg>
+                    </a>
+                    <div class="footer-middle-social-icon">
+                        <a href="#" class="facebook">
+                            <svg width="25" height="25" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 17.929C0.00075303 14.5957 0.930526 11.3285 2.68499 8.49425C4.43945 5.65998 6.94918 3.37078 9.9324 1.88363C12.9156 0.396484 16.2543 -0.22973 19.5737 0.0752079C22.893 0.380145 26.0616 1.60424 28.724 3.61003C31.3863 5.61581 33.437 8.32346 34.6457 11.4299C35.8544 14.5364 36.1733 17.9189 35.5667 21.1966C34.9602 24.4742 33.4521 27.5179 31.2117 29.9861C28.9713 32.4543 26.0874 34.2488 22.8836 35.169V21.8934H26.7533L27.3348 17.4018H22.8845V14.5435C22.8845 13.2486 23.2488 12.3655 25.1072 12.3655H27.4603V8.35876C26.3136 8.23554 25.161 8.17644 24.0077 8.18271C20.5891 8.18271 18.2503 10.27 18.2503 14.102V17.4055H14.3965V21.8952H18.2503V35.8492C18.1465 35.8577 18.0388 35.8575 17.9349 35.8575C13.1793 35.858 8.61825 33.9695 5.25487 30.6074C1.89149 27.2452 0.00125146 22.6847 0 17.929Z"
+                                    fill="#D70000" />
+                            </svg>
+                        </a>
+                        <a href="#" class="facebook">
+                            <svg width="25" height="25" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 17.929C0.00075303 14.5957 0.930526 11.3285 2.68499 8.49425C4.43945 5.65998 6.94918 3.37078 9.9324 1.88363C12.9156 0.396484 16.2543 -0.22973 19.5737 0.0752079C22.893 0.380145 26.0616 1.60424 28.724 3.61003C31.3863 5.61581 33.437 8.32346 34.6457 11.4299C35.8544 14.5364 36.1733 17.9189 35.5667 21.1966C34.9602 24.4742 33.4521 27.5179 31.2117 29.9861C28.9713 32.4543 26.0874 34.2488 22.8836 35.169V21.8934H26.7533L27.3348 17.4018H22.8845V14.5435C22.8845 13.2486 23.2488 12.3655 25.1072 12.3655H27.4603V8.35876C26.3136 8.23554 25.161 8.17644 24.0077 8.18271C20.5891 8.18271 18.2503 10.27 18.2503 14.102V17.4055H14.3965V21.8952H18.2503V35.8492C18.1465 35.8577 18.0388 35.8575 17.9349 35.8575C13.1793 35.858 8.61825 33.9695 5.25487 30.6074C1.89149 27.2452 0.00125146 22.6847 0 17.929Z"
+                                    fill="#D70000" />
+                            </svg>
+                        </a>
+                        <a href="#" class="facebook">
+                            <svg width="25" height="25" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 17.929C0.00075303 14.5957 0.930526 11.3285 2.68499 8.49425C4.43945 5.65998 6.94918 3.37078 9.9324 1.88363C12.9156 0.396484 16.2543 -0.22973 19.5737 0.0752079C22.893 0.380145 26.0616 1.60424 28.724 3.61003C31.3863 5.61581 33.437 8.32346 34.6457 11.4299C35.8544 14.5364 36.1733 17.9189 35.5667 21.1966C34.9602 24.4742 33.4521 27.5179 31.2117 29.9861C28.9713 32.4543 26.0874 34.2488 22.8836 35.169V21.8934H26.7533L27.3348 17.4018H22.8845V14.5435C22.8845 13.2486 23.2488 12.3655 25.1072 12.3655H27.4603V8.35876C26.3136 8.23554 25.161 8.17644 24.0077 8.18271C20.5891 8.18271 18.2503 10.27 18.2503 14.102V17.4055H14.3965V21.8952H18.2503V35.8492C18.1465 35.8577 18.0388 35.8575 17.9349 35.8575C13.1793 35.858 8.61825 33.9695 5.25487 30.6074C1.89149 27.2452 0.00125146 22.6847 0 17.929Z"
+                                    fill="#D70000" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-middle-content">
+                    <div class="footer-middle-item">
+                        <p>(819) 919-7855</p>
+                        <p>VAL-DES-SOURCES, QC, CANADA</p>
+                    </div>
+                    <div class="footer-middle-item">
+                        <p>PROJETS</p>
+                        <p>À PROPOS</p>
+                        <p>CARRIÈRES</p>
+                    </div>
+                    <div class="footer-middle-item">
+                        <p>RÉSIDENTIEL </p>
+                        <p>COMMERCIAL</p>
+                        <p>GÉNIE CIVIL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" container footer-bottom-wrapper">
+            <p>© 2026 BETON JAQ. TOUS LES DROITS RÉSERVÉS.</p>
+            <p>Entrepreneur agréé et assuré conforme aux exigences de la Régie du bâtiment du Québec.</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/hamburger-menu.js"></script>
+</body>
+
+</html>
