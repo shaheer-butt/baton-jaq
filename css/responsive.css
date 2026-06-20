@@ -754,9 +754,10 @@
     }
 
     /* ── Introduction / Our Mission ── */
-    .services-page .our-mission .container{
+    .services-page .our-mission .container {
         padding-bottom: 0;
     }
+
     .intruduction-sutitle {
         margin: 0 40px;
     }
@@ -780,7 +781,7 @@
         max-height: 400px;
     }
 
-    .our-mission-bottom{
+    .our-mission-bottom {
         margin-bottom: 50px;
     }
 
@@ -833,6 +834,89 @@
         padding: 0 40px 15px 40px;
     }
 
+
+    /* ================================================================================================
+                                        Project PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+
+        .listed-projects {
+        margin-top: -80px;
+    }
+
+    .project-page .hero-content {
+        padding: 120px 40px 60px 40px;
+    }
+
+    .project-page .hero-title {
+        font-size: clamp(60px, 12vw, 120px);
+    }
+
+    .project-page .counter-box {
+        width: 70%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .project-page .counter-item-box {
+        width: 45%;
+    }
+
+    .project-page .counter-item-box count-up {
+        font-size: clamp(40px, 8vw, 70px) !important;
+    }
+
+    .project-page .counter-item-box .counter-text{
+        width: 100%;
+    }
+    /* ── Listed Projects ── */
+    .project-page-wrapper {
+        padding: 50px 40px 0 40px;
+        gap: 30px;
+    }
+
+    .projects-filters {
+        width: 25%;
+    }
+
+    .listed-projects-wrapper {
+        width: 75%;
+    }
+
+    .listed-project-title {
+        padding: 0 0 20px 0;
+    }
+
+    .listed-project-title h2 {
+        font-size: clamp(32px, 6vw, 50px);
+    }
+
+    .listed-project-item{
+        flex-direction: column;
+    }
+
+    .listed-project-item-content {
+        width: 100%;
+    }
+
+    .listed-project-item .project-details-btn {
+        margin: 0;
+    }
+
+    .listed-project-item-img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .listed-project-item-img img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .load-more-listed-btn {
+        padding: 30px 40px;
+    }
 }
 
 /* END @media (max-width: 1024px) */
@@ -1363,7 +1447,7 @@
         max-height: 280px;
     }
 
-    .our-mission-bottom{
+    .our-mission-bottom {
         padding: 30px 24px 0 24px;
     }
 
@@ -1416,6 +1500,110 @@
         font-size: clamp(40px, 16vw, 80px);
     }
 
+
+    /* ================================================================================================
+                                        Project PAGE Responsivess
+    ================================================================================================ */
+
+
+
+    /* ── Hero ── */
+    .listed-projects{
+        margin-top: 0;
+    }
+    .project-page .hero-content {
+        padding: 100px 24px 30px 24px;
+    }
+
+    .project-page .hero-content .content-subtitle {
+        width: 60%;
+    }
+
+    .project-page .counter-box {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .project-page .counter-item-box {
+        width: 45%;
+    }
+
+    .project-page .counter-item-content .counter-text {
+        width: 100%;
+    }
+
+    /* ── Listed Projects: switch filters to <select> ── */
+    .project-page-wrapper {
+        padding: 40px 24px 0 24px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .projects-filters {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border-line-3);
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* Hide desktop filter lists + their labels, show <select> instead */
+    .filter-type,
+    .filters {
+        display: none;
+    }
+
+    .filters-mobile-select {
+        display: block;
+        /* override base "display: none" on mobile */
+        width: 50%;
+    }
+
+    .listed-projects-wrapper {
+        width: 100%;
+    }
+
+    .listed-project-title {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 0 16px 0;
+    }
+
+    .listed-project-title h2 {
+        font-size: clamp(28px, 9vw, 40px);
+    }
+
+    /* Stack image below content */
+    .listed-project-item {
+        flex-direction: column;
+        padding: 24px 0;
+    }
+
+    .listed-project-item-content {
+        width: 100%;
+    }
+
+    .listed-project-item-img {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .listed-project-item-img img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .listed-projects .project-details-left {
+        width: fit-content;
+    }
+
+    .load-more-listed-btn {
+        padding: 24px;
+    }
 }
 
 /* END @media (max-width: 768px) */
@@ -1743,6 +1931,46 @@
         padding: 0 15px 15px 15px;
     }
 
+
+    /* ================================================================================================
+                                        Project PAGE Responsivess
+    ================================================================================================ */
+
+
+    /* ── Hero ── */
+.project-page .hero-bg {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), 
+                url('../media/img/project-hero-section.webp') top right / cover no-repeat;
+}
+    .project-page .hero-content {
+        padding: 200px 15px 40px 15px;
+    }
+
+    .project-page .counter-item-box {
+        gap: 12px;
+    }
+
+    /* ── Listed Projects ── */
+    .project-page-wrapper {
+        padding: 30px 15px 0 15px;
+    }
+
+    .projects-filters {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .filters-mobile-select {
+        width: 100%;
+    }
+
+    .listed-project-item-img img {
+        height: 200px;
+    }
+
+    .load-more-listed-btn {
+        padding: 24px 15px;
+    }
 }
 
 /* END @media (max-width: 480px) */
