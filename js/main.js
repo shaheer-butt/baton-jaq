@@ -110,3 +110,31 @@ document.querySelectorAll('.finition-tabs').forEach(function (section) {
     });
   });
 });
+
+
+
+/* ===========================================
+      Splide Js  Carrier Gallery  Slider 
+=========================================== */
+/* ===========================================
+          Splide Js Member Slider
+=========================================== */
+window.addEventListener('load', function () {
+  var splide = new Splide('.carrier-gallery-slider', {
+    type: 'loop',
+    autoWidth: true,
+    arrows: false,
+    pagination: false,
+    gap: 24,
+    padding: 0,
+    drag: true,
+    trimSpace: false,
+    autoScroll: {
+      speed: 1.5, // Adjust speed as needed
+      pauseOnHover: true,
+      pauseOnFocus: false,
+    },
+  });
+
+  splide.mount(window.splide.Extensions);
+});

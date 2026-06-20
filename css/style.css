@@ -78,6 +78,7 @@
     --font-about-us-story-text: clamp(22px, calc(22px + (50 - 22) * ((100vw - 375px) / (1440 - 375))), 50px);
     --font-our-mission-title: clamp(35px, calc(35px + (90 - 35) * ((100vw - 375px) / (1440 - 375))), 90px);
     --font-service-page-title: clamp(45px, calc(45px + (153 - 45) * ((100vw - 375px) / (1440 - 375))), 153px);
+    --font-carriers-hero-page-title: clamp(45px, calc(50px + (165 - 50) * ((100vw - 375px) / (1440 - 375))), 165px);
 }
 
 
@@ -2373,4 +2374,101 @@ count-up {
     display: flex;
     justify-content: center;
     padding: 30px 80px;
+}
+
+
+/* =======================================================================================================================
+                                            Carriers Page Styling Start Here
+======================================================================================================================= */
+
+/* ===========================================
+    Hero Section Styling Start Here
+=========================================== */
+.carriers-page .hero-content{
+    padding: 100px 80px 120px 80px;
+}
+
+.carriers-page .hero-title{
+    font-size: var(--font-carriers-page-hero-title);
+    line-height: 0.5;
+    letter-spacing: 0.04em;
+}
+
+.carriers-page .hero-content-wrapper .btn-devis{
+        margin-top: 25px;
+    margin-bottom: -25px;
+}
+
+/* ===========================================
+    Projects Section Styling End  Here
+=========================================== */
+
+
+
+/* ===========================================
+    Why Work Section Styling Start Here
+=========================================== */
+
+
+.carriers-page  .counter-wrapper-box{
+    flex-direction: column;
+    gap: 0;
+}
+
+.carriers-page  .counter-wrapper-box h2{
+    font-size: var(--font-hero-main);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: var(--color-story-text-1);
+    border-top: 1px solid var(--color-border-line-3);
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+.carriers-page .values-icon-box-wrapper {
+    margin-top: 0;
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+.value-icon-box-item{
+    padding: 30px !important;
+    height: 300px;
+    border-right: 1px solid var(--color-border-line-3);
+}
+
+.value-icon-box-item:nth-child(3){
+    border: none !important;
+}
+
+.value-icon-box-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.value-icon-box-content h4 {
+    color: var(--color-text);
+}
+.value-icon-box-content p {
+    color: var(--color-text);
+}
+/* ===========================================
+      Why Work Section Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+    Carrier Gallery Styling Start Here
+=========================================== */
+
+.carrier-gallery-item img {
+    width: 33.3%;
+    clip-path: shape(from 30px 0%,
+            hline to 100%,
+            vline to 100%,
+            line to 0% 100%,
+            line to 0% 30px,
+            line to 30px 30px,
+
+            close);
 }
