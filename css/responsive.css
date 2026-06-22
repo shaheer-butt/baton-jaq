@@ -991,6 +991,61 @@
         padding: 40px 30px;
     }
 
+    /* ================================================================================================
+                                        Contact Us PAGE Responsivess
+    ================================================================================================ */
+
+
+    /* ── Hero ── */
+    .contact-us-page .hero-content {
+        padding: 90px 0 0 0;
+    }
+
+    .contact-us-page .hero-content-wrapper {
+        gap: 80px;
+        padding: 40px;
+        width: 100%;
+    }
+
+    .contact-us-page .hero-title {
+        padding: 10px 0px;
+    }
+
+    .contact-details {
+        padding: 0 0px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contact-details-item {
+        padding: 20px;
+    }
+
+    .contact-details-item a h5 {
+        font-size: clamp(16px, 2vw, 20px);
+    }
+
+    /* ── Contact Form Section ── */
+    .contact-us-page .counter-wrapper-box {
+        height: auto;
+        padding: 60px 40px;
+    }
+
+    .contact-us-page .counter-wrapper-box .content-subtitle-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-us-page .counter-wrapper-box .content-subtitle-wrapper .content-subtitle {
+        width: 60%;
+    }
+
+    .contact-form {
+        width: 100%;
+        min-height: 400px;
+    }
+
+
 }
 
 /* END @media (max-width: 1024px) */
@@ -1821,6 +1876,75 @@
         font-size: clamp(24px, 7vw, 30px);
     }
 
+
+
+    /* ================================================================================================
+                                        Contact Us PAGE Responsivess
+    ================================================================================================ */
+
+
+    /* ── Hero ── */
+    .contact-us-page .hero {
+        height: auto;
+        min-height: 100svh;
+    }
+
+    .contact-us-page .hero-content {
+        padding: 80px 0 0 0;
+    }
+
+    .contact-us-page .hero-content-wrapper {
+        gap: 40px;
+        padding: 24px;
+    }
+
+    .contact-us-page .hero-title {
+        padding: 10px 0px;
+    }
+
+    /* Stack contact details to single column */
+    .contact-details {
+        padding: 0 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .contact-details-item {
+        width: 100%;
+        padding: 20px 0;
+        border-right: none !important;
+        border-bottom: 1px solid var(--color-border-line-3);
+    }
+
+    .contact-details-item:nth-child(3) {
+        border-bottom: none !important;
+    }
+
+    .contact-details-item a h5 {
+        font-size: clamp(16px, 4vw, 18px);
+    }
+
+    /* ── Contact Form Section ── */
+    .contact-us-page .counter-wrapper-box {
+        padding: 40px 24px;
+    }
+
+    .contact-us-page .counter-wrapper-box .content-subtitle-wrapper .content-subtitle {
+        width: 90%;
+    }
+
+    .contact-form {
+        min-height: 350px;
+    }
+
+    .project-slide-arrow{
+        clip-path: none !important;
+        padding-top: 40px;
+        margin-top: -20px;
+    }
+
+
 }
 
 /* END @media (max-width: 768px) */
@@ -2233,6 +2357,50 @@
     .carrier-jobs-content ul {
         margin-left: 20px;
         gap: 30px;
+    }
+
+
+    /* ================================================================================================
+                                        Contact Us PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+
+    .contact-us-page  .hero-content-wrapper {
+        padding: 15px;
+    }
+
+    .contact-us-page .hero-content {
+        padding: 100px 0 0 0;
+    }
+
+    .contact-us-page .hero-title {
+        padding: 10px px;
+    }
+
+    .contact-details {
+        padding: 0;
+    }
+
+    /* ── Contact Form Section ── */
+    .contact-us-page .counter-wrapper-box {
+        padding: 30px 15px;
+    }
+
+    .contact-form {
+        min-height: 300px;
+    }
+
+    .project-slider{
+        position: relative;
+        z-index: 9;
+    }
+
+    .contact-us-page .project-slide-arrow {
+        padding-top: 70px;
+        margin-top: -50px;
+        position: relative;
+        z-index: 1;
     }
 
 }

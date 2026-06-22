@@ -2694,9 +2694,10 @@ count-up {
                                             Contact Us Page Styling Start Here
 ======================================================================================================================= */
 
-.contact-us-page .hero{
+.contact-us-page .hero {
     height: 100vh;
 }
+
 .contact-us-page .hero-content {
     padding: 100px 0 0 0;
 }
@@ -2767,15 +2768,30 @@ count-up {
     height: 700px;
 }
 
-.contact-us-page .counter-wrapper-box .content-subtitle-wrapper{
+.contact-us-page .counter-wrapper-box .content-subtitle-wrapper {
     width: 30%;
 }
 
-.contact-us-page .counter-wrapper-box .content-subtitle-wrapper .content-subtitle{
+.contact-us-page .counter-wrapper-box .content-subtitle-wrapper .content-subtitle {
     width: 40%;
 }
 
-.contact-form{
+.contact-form {
     width: 70%;
     background: blue;
+}
+
+
+.contact-us-page .project-slide-arrow {
+    background: var(--color-secondary) !important;
+    position: relative;
+    clip-path: shape(from 0% 0%,
+            line to 100% 0%,
+            line to 100% 86%,
+            line to 98% 86%,
+            line to 98% 100%,
+            line to 2% 100%,
+            line to 2% 86%,
+            line to 0% 86%,
+            close);
 }
