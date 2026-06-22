@@ -841,7 +841,7 @@
 
     /* ── Hero ── */
 
-        .listed-projects {
+    .listed-projects {
         margin-top: -80px;
     }
 
@@ -867,9 +867,10 @@
         font-size: clamp(40px, 8vw, 70px) !important;
     }
 
-    .project-page .counter-item-box .counter-text{
+    .project-page .counter-item-box .counter-text {
         width: 100%;
     }
+
     /* ── Listed Projects ── */
     .project-page-wrapper {
         padding: 50px 40px 0 40px;
@@ -892,7 +893,7 @@
         font-size: clamp(32px, 6vw, 50px);
     }
 
-    .listed-project-item{
+    .listed-project-item {
         flex-direction: column;
     }
 
@@ -917,6 +918,79 @@
     .load-more-listed-btn {
         padding: 30px 40px;
     }
+
+
+    /* ================================================================================================
+                                        Carrier PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+    .carriers-page .hero-content {
+        padding: 120px 40px 80px 40px;
+    }
+
+    .carriers-page .hero-title {
+        font-size: clamp(50px, 9vw, 90px);
+        line-height: 0.8;
+    }
+
+    /* ── Why Work / Counter ── */
+    .carriers-page .counter-wrapper-box h2 {
+        font-size: clamp(60px, 12vw, 140px);
+    }
+
+    .carriers-page .value-icon-box-item {
+        padding: 25px !important;
+        height: auto;
+        min-height: 260px;
+    }
+
+    /* ── Gallery ── */
+    .carrier-gallery-content {
+        padding: 70px 40px;
+    }
+
+    .carrier-gallery-content h3 {
+        font-size: clamp(30px, 5vw, 45px);
+        width: 100%;
+    }
+
+    /* ── Join Team / Job Listings ── */
+    .join-team-wrapper .content-subtitle-wrapper {
+        padding: 25px 40px !important;
+        margin-left: 20px;
+    }
+
+    .join-team-wrapper .content-subtitle-wrapper .content-subtitle {
+        width: 20%;
+    }
+
+    .join-team-wrapper h2 {
+        font-size: clamp(40px, 8vw, 70px);
+        padding: 10px 40px;
+    }
+
+    .carrier-jobs-wrapper {
+        padding: 20px 40px;
+    }
+
+    .carrier-jobs-content h3 {
+        font-size: clamp(20px, 3vw, 28px);
+    }
+
+    .carrier-jobs-content ul {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .job-popup-content {
+        padding: 40px 30px;
+    }
+
+    .job-popup-form {
+        padding: 40px 30px;
+    }
+
 }
 
 /* END @media (max-width: 1024px) */
@@ -1508,9 +1582,10 @@
 
 
     /* ── Hero ── */
-    .listed-projects{
+    .listed-projects {
         margin-top: 0;
     }
+
     .project-page .hero-content {
         padding: 100px 24px 30px 24px;
     }
@@ -1604,6 +1679,148 @@
     .load-more-listed-btn {
         padding: 24px;
     }
+
+
+
+    /* ================================================================================================
+                                        Carrier PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+    .carriers-page .hero-content {
+        padding: 100px 24px 60px 24px;
+    }
+
+    .carriers-page .hero-title {
+        font-size: clamp(36px, 11vw, 56px);
+        line-height: 0.9;
+    }
+
+    .carriers-page .hero-content-wrapper .btn-devis {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    /* ── Why Work / Counter: stack cards to single column ── */
+    .carriers-page .counter-wrapper-box h2 {
+        font-size: clamp(40px, 16vw, 70px);
+        padding: 16px 0;
+    }
+
+    .carriers-page .values-icon-box-wrapper {
+        flex-direction: column;
+    }
+
+    .carriers-page .value-icon-box-item {
+        width: 100%;
+        height: auto;
+        min-height: unset;
+        padding: 24px 0 !important;
+        border-right: none !important;
+        border-bottom: 1px solid var(--color-border-line-3);
+    }
+
+    .carriers-page .value-icon-box-item:nth-child(3) {
+        border-bottom: none !important;
+    }
+
+    /* ── Gallery ── */
+    .carrier-gallery-content {
+        padding: 50px 24px;
+    }
+
+    .carrier-gallery-content h3 {
+        font-size: clamp(22px, 7vw, 32px);
+    }
+
+    /* ── Join Team / Job Listings ── */
+    .join-team-wrapper .content-subtitle-wrapper {
+        padding: 20px 24px !important;
+    }
+
+    .join-team-wrapper .content-subtitle-wrapper .content-subtitle {
+        width: 50%;
+    }
+
+    .join-team-wrapper h2 {
+        font-size: clamp(32px, 12vw, 48px);
+        padding: 10px 24px;
+    }
+
+    .carrier-jobs-wrapper {
+        padding: 20px 24px;
+    }
+
+    /* Stack job content + button vertically with full-width button */
+    .carrier-jobs-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 24px 0;
+    }
+
+    .carrier-jobs-item:nth-child(2) {
+        padding: 24px 0;
+    }
+
+    .carrier-jobs-content h3 {
+        font-size: clamp(18px, 5vw, 24px);
+    }
+
+    .carrier-jobs-content ul {
+        gap: 30px;
+        margin-left: 14px;
+        flex-wrap: wrap;
+    }
+
+    .carrier-jobs-content ul li {
+        font-size: var(--font-card-text);
+    }
+
+    .carrier-job-btn {
+        width: 100%;
+    }
+
+    .carrier-job-btn .btn-devis {
+        justify-content: center;
+    }
+
+    .job-popup-overlay {
+        padding: 0;
+    }
+
+    .job-popup-box {
+        max-height: 100vh;
+        height: 100%;
+        padding: 0;
+    }
+
+    .job-popup-close {
+        top: 16px;
+        right: 16px;
+    }
+
+    .job-popup-inner {
+        flex-direction: column;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .job-popup-content,
+    .job-popup-form {
+        width: 100%;
+        padding: 70px 24px 30px 24px;
+    }
+
+    .job-popup-content {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border-line-2);
+    }
+
+    .job-popup-title {
+        font-size: clamp(24px, 7vw, 30px);
+    }
+
 }
 
 /* END @media (max-width: 768px) */
@@ -1938,10 +2155,11 @@
 
 
     /* ── Hero ── */
-.project-page .hero-bg {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), 
-                url('../media/img/project-hero-section.webp') top right / cover no-repeat;
-}
+    .project-page .hero-bg {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+            url('../media/img/project-hero-section.webp') top right / cover no-repeat;
+    }
+
     .project-page .hero-content {
         padding: 200px 15px 40px 15px;
     }
@@ -1971,6 +2189,52 @@
     .load-more-listed-btn {
         padding: 24px 15px;
     }
+
+
+
+
+    /* ================================================================================================
+                                        Carrier PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+    .carriers-page .hero-content {
+        padding: 100px 15px 50px 15px;
+    }
+
+    /* ── Why Work / Counter ── */
+    .carriers-page .value-icon-box-item {
+        padding: 20px 0 !important;
+    }
+
+    /* ── Gallery ── */
+    .carrier-gallery-content {
+        padding: 40px 15px;
+    }
+
+    /* ── Join Team / Job Listings ── */
+    .join-team-wrapper .content-subtitle-wrapper {
+        padding: 16px 15px !important;
+        margin-left: 20px;
+    }
+
+    .join-team-wrapper .content-subtitle-wrapper .content-subtitle {
+        width: 70%;
+    }
+
+    .join-team-wrapper h2 {
+        padding: 10px 15px;
+    }
+
+    .carrier-jobs-wrapper {
+        padding: 16px 15px;
+    }
+
+    .carrier-jobs-content ul {
+        margin-left: 20px;
+        gap: 30px;
+    }
+
 }
 
 /* END @media (max-width: 480px) */

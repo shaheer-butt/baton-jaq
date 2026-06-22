@@ -78,7 +78,8 @@
     --font-about-us-story-text: clamp(22px, calc(22px + (50 - 22) * ((100vw - 375px) / (1440 - 375))), 50px);
     --font-our-mission-title: clamp(35px, calc(35px + (90 - 35) * ((100vw - 375px) / (1440 - 375))), 90px);
     --font-service-page-title: clamp(45px, calc(45px + (153 - 45) * ((100vw - 375px) / (1440 - 375))), 153px);
-    --font-carriers-hero-page-title: clamp(45px, calc(50px + (165 - 50) * ((100vw - 375px) / (1440 - 375))), 165px);
+    --font-carriers-page-hero-title: clamp(45px, calc(45px + (165 - 45) * ((100vw - 375px) / (1440 - 375))), 165px);
+    --font-carriers-job-title: clamp(20px, calc(20px + (45 - 20) * ((100vw - 375px) / (1440 - 375))), 45px);
 }
 
 
@@ -435,7 +436,7 @@ header {
     border-right: none;
 }
 
-.container.border-container{
+.container.border-container {
     border: none !important;
 }
 
@@ -2199,28 +2200,30 @@ count-up {
     line-height: 1;
 }
 
-.project-page .counter-box{
+.project-page .counter-box {
     width: 50%;
 }
 
-.project-page .counter-item-box{
+.project-page .counter-item-box {
     padding: 0 !important;
     width: 50%;
     display: flex;
     gap: 20px;
 }
-.project-page .counter-item-box count-up{
+
+.project-page .counter-item-box count-up {
     font-size: var(--font-achievements-title) !important;
 }
+
 .project-page .counter-item-content {
     margin: 0;
 }
 
-.project-page .counter-item-content .counter-shape{
+.project-page .counter-item-content .counter-shape {
     background-color: var(--color-text);
 }
 
-.project-page .counter-item-content .counter-text{
+.project-page .counter-item-content .counter-text {
     font-size: var(--font-btn);
     width: 70%;
 }
@@ -2234,7 +2237,7 @@ count-up {
 /* ===========================================
     Projects Section Styling Start Here
 =========================================== */
-.listed-projects{
+.listed-projects {
     margin-top: -150px;
     background-color: var(--color-secondary);
     position: relative;
@@ -2251,25 +2254,25 @@ count-up {
             close);
 }
 
-.project-page-wrapper{
+.project-page-wrapper {
     padding: 50px 80px 0 80px;
     display: flex;
     gap: 40px;
 }
 
-.projects-filters{
+.projects-filters {
     width: 16.3%;
     height: 100vh;
     border-right: 1px solid var(--color-border-line-3);
 }
 
-.filter-type{
+.filter-type {
     padding: 20px 0;
     width: 80%;
     border-bottom: 1px solid var(--color-border-line-3);
 }
 
-.filters{
+.filters {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -2285,7 +2288,7 @@ count-up {
     color: var(--font-text);
 }
 
-.listed-projects-wrapper{
+.listed-projects-wrapper {
     width: 83.7%;
 }
 
@@ -2295,45 +2298,46 @@ count-up {
     border-bottom: 1px solid var(--color-border-line-3);
 }
 
-.listed-project-title h2{
+.listed-project-title h2 {
     font-size: var(--font-achievements-title);
     font-weight: 400;
     letter-spacing: 0.04em;
     color: var(--color-text);
 }
 
-.listed-project-title p{
+.listed-project-title p {
     font-size: var(--font-subtitle);
     color: var(--color-project-detail-subtitle);
     letter-spacing: 0.04em;
 }
 
-.listed-project-item{
+.listed-project-item {
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--color-border-line-3);
 }
 
-.listed-project-item-content{
+.listed-project-item-content {
     width: 45%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.listed-project-item .project-details-subtitle p{
+
+.listed-project-item .project-details-subtitle p {
     font-size: var(--font-btn);
     letter-spacing: 0.04em;
     color: var(--color-project-detail-subtitle);
 }
 
-.listed-project-item .listed-project-item-content h3{
+.listed-project-item .listed-project-item-content h3 {
     font-size: var(--font-slide-text) !important;
     letter-spacing: 0.04em;
     font-weight: 400;
 }
 
-.project-details-btn{
+.project-details-btn {
     margin-top: 30px;
 }
 
@@ -2342,11 +2346,11 @@ count-up {
     border: 1px solid var(--color-border-line-3);
 }
 
-.listed-projects .project-details-left-item:nth-child(1){
+.listed-projects .project-details-left-item:nth-child(1) {
     padding-left: 0;
 }
 
-.listed-projects .project-details-btn{
+.listed-projects .project-details-btn {
     justify-content: flex-start;
 }
 
@@ -2356,11 +2360,11 @@ count-up {
     justify-content: flex-end;
 }
 
-.listed-project-item-img img{
+.listed-project-item-img img {
     width: 90%;
     height: 280px;
     object-fit: cover;
-        clip-path: shape(from 20px 0%,
+    clip-path: shape(from 20px 0%,
             hline to 100%,
             vline to 100%,
             line to 0% 100%,
@@ -2370,7 +2374,7 @@ count-up {
             close);
 }
 
-.load-more-listed-btn{
+.load-more-listed-btn {
     display: flex;
     justify-content: center;
     padding: 30px 80px;
@@ -2384,18 +2388,18 @@ count-up {
 /* ===========================================
     Hero Section Styling Start Here
 =========================================== */
-.carriers-page .hero-content{
+.carriers-page .hero-content {
     padding: 100px 80px 120px 80px;
 }
 
-.carriers-page .hero-title{
+.carriers-page .hero-title {
     font-size: var(--font-carriers-page-hero-title);
     line-height: 0.5;
     letter-spacing: 0.04em;
 }
 
-.carriers-page .hero-content-wrapper .btn-devis{
-        margin-top: 25px;
+.carriers-page .hero-content-wrapper .btn-devis {
+    margin-top: 25px;
     margin-bottom: -25px;
 }
 
@@ -2410,12 +2414,12 @@ count-up {
 =========================================== */
 
 
-.carriers-page  .counter-wrapper-box{
+.carriers-page .counter-wrapper-box {
     flex-direction: column;
     gap: 0;
 }
 
-.carriers-page  .counter-wrapper-box h2{
+.carriers-page .counter-wrapper-box h2 {
     font-size: var(--font-hero-main);
     font-weight: 400;
     line-height: 1;
@@ -2424,33 +2428,40 @@ count-up {
     border-top: 1px solid var(--color-border-line-3);
     border-bottom: 1px solid var(--color-border-line-3);
 }
+
 .carriers-page .values-icon-box-wrapper {
     margin-top: 0;
     border-bottom: 1px solid var(--color-border-line-3);
 }
 
-.value-icon-box-item{
+.carriers-page .value-icon-box-item {
     padding: 30px !important;
     height: 300px;
     border-right: 1px solid var(--color-border-line-3);
 }
 
-.value-icon-box-item:nth-child(3){
+.carriers-page .value-icon-box-item:nth-child(1) {
+    padding-left: 0 !important;
+}
+
+.carriers-page .value-icon-box-item:nth-child(3) {
     border: none !important;
 }
 
-.value-icon-box-content{
+.carriers-page .value-icon-box-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.value-icon-box-content h4 {
+.carriers-page .value-icon-box-content h4 {
     color: var(--color-text);
 }
-.value-icon-box-content p {
+
+.carriers-page .value-icon-box-content p {
     color: var(--color-text);
 }
+
 /* ===========================================
       Why Work Section Styling End Here
 =========================================== */
@@ -2462,13 +2473,309 @@ count-up {
 =========================================== */
 
 .carrier-gallery-item img {
-    width: 33.3%;
+    width: 100%;
     clip-path: shape(from 30px 0%,
             hline to 100%,
             vline to 100%,
             line to 0% 100%,
             line to 0% 30px,
             line to 30px 30px,
-
             close);
+}
+
+.carrier-gallery-content {
+    padding: 100px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrier-gallery-content h3 {
+    font-size: var(--font-hero-second);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--color-story-text-1);
+    width: 90%;
+}
+
+/* ===========================================
+    Carrier Gallery Styling End Here
+=========================================== */
+
+
+/* ===========================================
+        Join Team Styling Start Here
+=========================================== */
+
+.container.join-team-wrapper {
+    padding: 0 !important;
+    background: linear-gradient(rgba(226, 226, 226, 0.3), rgba(226, 226, 226, 0.3)),
+        url('../media/img/service-texture.webp') top right/contain repeat;
+}
+
+.join-team-wrapper .content-subtitle-wrapper {
+    padding: 30px 80px 30px 100px !important;
+    margin: 0;
+}
+
+.join-team-wrapper .content-subtitle-wrapper .content-subtitle {
+    color: var(--color-secondary);
+    width: 7%;
+}
+
+.join-team-wrapper h2 {
+    font-size: var(--font-carriers-page-hero-title);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    color: var(--color-secondary);
+    padding: 10px 80px;
+    border-bottom: 1px solid var(--color-border-line-3);
+    border-top: 1px solid var(--color-border-line-3);
+}
+
+
+.carrier-jobs-wrapper {
+    padding: 20px 80px;
+}
+
+
+.carrier-jobs-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+.carrier-jobs-item:nth-child(2) {
+    padding: 20px 0;
+    border-bottom: none;
+}
+
+
+.carrier-jobs-content h3 {
+    font-size: var(--font-carriers-job-title);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--color-slide-text);
+}
+
+.carrier-jobs-content ul {
+    list-style-type: square;
+    color: var(--color-slide-text);
+    display: flex;
+    gap: 40px;
+    margin-left: 20px;
+}
+
+.carrier-jobs-content ul li {
+    font-size: var(--font-subtitle);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.carrier-jobs-content ul li::marker {
+    font-size: 25px;
+}
+
+.job-popup-overlay {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.7);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.job-popup-overlay.open {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.job-popup-box {
+    width: 100%;
+    max-width: 1100px;
+    max-height: 90vh;
+    position: relative;
+}
+
+.job-popup-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 44px;
+    height: 44px;
+    background: var(--color-primary);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.job-popup-close:hover {
+    background-color: var(--color-red-btn-hover);
+}
+
+.job-popup-inner {
+    display: flex;
+    overflow-y: auto;
+}
+
+
+.job-popup-content {
+    width: 60%;
+    padding: 50px 40px;
+    border-right: 1px solid var(--color-border-line-3);
+    background: linear-gradient(rgba(210, 210, 210, 0.3), rgba(210, 210, 210, 0.3)),
+        url('../media/img/service-texture.webp') top right/contain repeat;
+}
+
+.job-popup-content .counter-shape {
+    margin-bottom: 20px;
+}
+
+.job-popup-title {
+    font-size: var(--font-carriers-job-title);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.15;
+    color: var(--color-secondary);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+.job-popup-section {
+    margin-bottom: 20px;
+}
+
+.job-popup-section .content-subtitle-wrapper {
+    margin-bottom: 20px;
+}
+
+.job-popup-section .content-subtitle-wrapper li {
+    font-size: var(--font-subtitle);
+    letter-spacing: 0.04em;
+    color: var(--color-secondary);
+}
+
+.job-popup-list {
+    font-family: "TT Lakes Neue Trl Ext", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 2;
+    color: var(--color-secondary);
+    gap: 10px;
+}
+
+.job-popup-form {
+    width: 40%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: linear-gradient(rgba(235, 235, 235, 0.3), rgba(235, 235, 235, 0.3)),
+        url('../media/img/service-texture.webp') top right/contain repeat;
+}
+
+
+/* =======================================================================================================================
+                                            Contact Us Page Styling Start Here
+======================================================================================================================= */
+
+.contact-us-page .hero{
+    height: 100vh;
+}
+.contact-us-page .hero-content {
+    padding: 100px 0 0 0;
+}
+
+.contact-us-page .hero-content-wrapper {
+    height: 100% !important;
+    justify-content: flex-start;
+    gap: 80px;
+}
+
+.contact-us-page .hero-breadcrumbs {
+    margin: 0;
+}
+
+.hero-title-wrapper {
+    background: var(--color-primary);
+    width: 100%;
+}
+
+.contact-us-page .hero-title {
+    font-size: var(--font-about-us-hero-title);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 10px 80px;
+    border-top: 1px solid var(--color-border-line-3);
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 80px;
+}
+
+.contact-details-item {
+    width: fit-content;
+    padding: 30px;
+    border-right: 1px solid var(--color-border-line-3);
+}
+
+.contact-details-item:nth-child(1) {
+    padding-left: 0;
+}
+
+
+.contact-details-item:nth-child(3) {
+    border: none;
+}
+
+.contact-details-item a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.contact-us-page .hero-content .content-subtitle {
+    color: var(--color-text) !important;
+}
+
+.contact-details-item a h5 {
+    font-size: var(--font-counter-text);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.contact-us-page .counter-wrapper-box {
+    height: 700px;
+}
+
+.contact-us-page .counter-wrapper-box .content-subtitle-wrapper{
+    width: 30%;
+}
+
+.contact-us-page .counter-wrapper-box .content-subtitle-wrapper .content-subtitle{
+    width: 40%;
+}
+
+.contact-form{
+    width: 70%;
+    background: blue;
 }

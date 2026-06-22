@@ -122,7 +122,7 @@ document.querySelectorAll('.finition-tabs').forEach(function (section) {
 window.addEventListener('load', function () {
   var splide = new Splide('.carrier-gallery-slider', {
     type: 'loop',
-    autoWidth: true,
+    fixedWidth: '40%',
     arrows: false,
     pagination: false,
     gap: 24,
@@ -138,3 +138,53 @@ window.addEventListener('load', function () {
 
   splide.mount(window.splide.Extensions);
 });
+
+
+
+
+/* ===========================================
+            Job Application Popup
+=========================================== */
+(function () {
+    var overlay = document.querySelector('.job-popup-overlay');
+    var popupTitle = document.querySelector('.job-popup-title');
+    var closeBtn = document.querySelector('.job-popup-close');
+    var applyButtons = document.querySelectorAll('.carrier-job-btn .btn-devis');
+
+    if (!overlay || !applyButtons.length) return;
+
+    applyButtons.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            var jobItem = btn.closest('.carrier-jobs-item');
+            if (!jobItem) return;
+
+            var title = jobItem.querySelector('.carrier-jobs-title');
+
+            popupTitle.textContent = title ? title.textContent : '';
+
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    closeBtn.addEventListener('click', function () {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    });
+
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) {
+            overlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && overlay.classList.contains('open')) {
+            overlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+})();
