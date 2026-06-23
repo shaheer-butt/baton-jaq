@@ -1045,6 +1045,61 @@
         min-height: 400px;
     }
 
+    /* ================================================================================================
+                                      Single Project PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+    .single-project-page .hero-content {
+        padding: 110px 40px 60px 40px;
+    }
+
+    .single-project-page .project-details-subtitle {
+        padding: 0;
+    }
+
+    .single-project-page .hero-title {
+        padding: 0;
+    }
+
+    .single-project-page .contact-details .contact-details-item {
+        width: 33.3% !important;
+        padding: 16px 0px !important;
+    }
+
+    .single-hero-btn {
+        padding: 0;
+    }
+
+    .single-project-page .hero-scroll-down{
+        padding-top: 30px;
+    }
+
+    /* ── About / Image Content ── */
+    .single-project-page .project-page-wrapper .single-about-project-details {
+        width: 90%;
+        font-size: clamp(24px, 4vw, 36px);
+    }
+
+    .img-content-wrapper {
+        gap: 30px;
+    }
+
+    .single-content-wrapper h2 {
+        font-size: clamp(50px, 9vw, 80px);
+    }
+
+    /* ── Gallery Title ── */
+    .single-gallery .project-content-title {
+        padding: 0 40px 15px 40px;
+    }
+
+    /* ── Achievements / CTA ── */
+    .single-project-page .achievements-card {
+        width: 65%;
+        padding: 30px 30px 30px 40px;
+    }
+
 
 }
 
@@ -1938,12 +1993,101 @@
         min-height: 350px;
     }
 
-    .project-slide-arrow{
+    .project-slide-arrow {
         clip-path: none !important;
         padding-top: 40px;
         margin-top: -20px;
     }
 
+    /* ================================================================================================
+                                        Single Project PAGE Responsivess
+    ================================================================================================ */
+
+    /* ── Hero ── */
+    .single-project-page .hero-bg {
+        width: 70%;
+        height: 45%;
+        /* opacity: 0.4; */
+    }
+
+    .single-project-page .hero-content {
+        padding: 100px 24px 50px 24px;
+    }
+
+    .single-project-page .project-details-subtitle {
+        padding: 0px;
+    }
+
+    .single-project-page .hero-title {
+        padding: 0px;
+    }
+
+    /* Contact details: full width stacked rows */
+    .single-project-page .contact-details {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .single-project-page .contact-details .contact-details-item {
+        width: 100% !important;
+        padding: 14px 0px !important;
+    }
+
+    .single-hero-btn {
+        padding: 0px;
+    }
+
+    /* About / Image Content */
+    .single-project-page .project-page-wrapper .single-about-project-details {
+        width: 100%;
+    }
+
+    .img-content-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .single-content-wrapper {
+        width: 100%;
+        order: 1;
+    }
+
+    .single-content-wrapper h2 {
+        font-size: clamp(40px, 14vw, 60px);
+    }
+
+    .single-content-wrapper p {
+        margin: 20px 0;
+    }
+
+    .img-content-wrapper .single-img-1 {
+        width: 48%;
+        margin-top: 0;
+        order: 2;
+    }
+
+    .img-content-wrapper .single-img-2 {
+        width: 48%;
+        margin-top: 0;
+        order: 3;
+    }
+
+    .img-content-wrapper img {
+        height: 220px;
+    }
+
+    /* ── Gallery Title ── */
+    .single-gallery .project-content-title {
+        padding: 0 24px 15px 24px;
+        font-size: clamp(36px, 16vw, 70px);
+    }
+
+    /* ── Achievements / CTA ── */
+    .single-project-page .achievements-card {
+        width: 100%;
+        padding: 25px;
+    }
 
 }
 
@@ -2079,7 +2223,7 @@
     }
 
     .container.project-slide-arrow {
-        padding: 20px 15px;
+        padding: 40px 15px 20px 15px;
     }
 
 
@@ -2366,7 +2510,7 @@
 
     /* ── Hero ── */
 
-    .contact-us-page  .hero-content-wrapper {
+    .contact-us-page .hero-content-wrapper {
         padding: 15px;
     }
 
@@ -2391,7 +2535,7 @@
         min-height: 300px;
     }
 
-    .project-slider{
+    .project-slider {
         position: relative;
         z-index: 9;
     }
@@ -2401,6 +2545,38 @@
         margin-top: -50px;
         position: relative;
         z-index: 1;
+    }
+
+
+    /* ================================================================================================
+                                        Single Project PAGE Responsivess
+    ================================================================================================ */
+
+
+    /* ── Hero ── */
+    .single-project-page .hero-content {
+        padding: 100px 15px 40px 15px;
+    }
+
+    .single-project-page .contact-details .contact-details-item {
+        padding: 12px 0px !important;
+    }
+
+
+    /* ── About / Image Content ── */
+
+    .img-content-wrapper .single-img-1{
+        width: 47%;
+    }
+
+    .img-content-wrapper img {
+        height: 160px;
+    }
+
+    /* ── Gallery Title ── */
+    .single-gallery .project-content-title {
+        font-size: clamp(40px, 10vw, 90px);
+        padding: 0 15px 15px 15px;
     }
 
 }

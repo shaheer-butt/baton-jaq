@@ -1037,10 +1037,11 @@ count-up {
 }
 
 .project-content-title {
-    font-size: clamp(45px, calc(47px + (208 - 47) * ((100vw - 375px) / (1440 - 375))), 208px);
+    font-size: clamp(45px, calc(47px + (208 - 47) * ((100vw - 375px) / (1440 - 375))), 189px);
     font-weight: 400;
     text-align: center;
     line-height: 1.2em;
+    letter-spacing: 0.04em;
     padding: 0 80px 15px 80px;
     border-bottom: 1px solid var(--color-border-line-3);
 }
@@ -2579,6 +2580,15 @@ count-up {
     font-size: 25px;
 }
 
+/* ===========================================
+        Join Team Styling End Here
+=========================================== */
+
+
+/* ===========================================
+        Job Popup Styling Start Here
+=========================================== */
+
 .job-popup-overlay {
     display: flex;
     position: fixed;
@@ -2689,10 +2699,19 @@ count-up {
         url('../media/img/service-texture.webp') top right/contain repeat;
 }
 
+/* ===========================================
+        Job Popup Styling End Here
+=========================================== */
+
 
 /* =======================================================================================================================
                                             Contact Us Page Styling Start Here
 ======================================================================================================================= */
+
+
+/* ===========================================
+        Hero Styling Start Here
+=========================================== */
 
 .contact-us-page .hero {
     height: 100vh;
@@ -2772,6 +2791,11 @@ count-up {
     width: 30%;
 }
 
+
+/* ===========================================
+    Contact Form Section Styling Start Here
+=========================================== */
+
 .contact-us-page .counter-wrapper-box .content-subtitle-wrapper .content-subtitle {
     width: 40%;
 }
@@ -2781,6 +2805,18 @@ count-up {
     background: blue;
 }
 
+/* ===========================================
+    Contact Form Section Styling End Here
+=========================================== */
+
+
+/* ===========================================
+    Related Projects Styling Start Here
+=========================================== */
+
+.contact-us-page .project-slider {
+    background: var(--color-secondary) !important;
+}
 
 .contact-us-page .project-slide-arrow {
     background: var(--color-secondary) !important;
@@ -2795,3 +2831,268 @@ count-up {
             line to 0% 86%,
             close);
 }
+
+/* ===========================================
+    Related Projects Styling End Here
+=========================================== */
+
+
+
+/* =======================================================================================================================
+                                           Single Project Page Styling Start Here
+======================================================================================================================= */
+
+
+/* ===========================================
+              Hero Styling Start Here
+=========================================== */
+
+.single-project-page .hero-bg {
+    bottom: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    width: 75%;
+}
+
+.single-project-page .hero-breadcrumbs {
+    margin: 0 !important;
+}
+
+.single-project-page .hero-content {
+    padding: 100px 0;
+}
+
+.single-project-page .project-details-subtitle {
+    padding: 0 80px;
+    color: var(--color-text);
+}
+
+.single-project-page .project-details-subtitle .achievements-card-shape {
+    background-color: var(--color-text) !important;
+}
+
+.single-project-page .hero-title-wrapper {
+    background: none;
+}
+
+.single-project-page .hero-title {
+    font-size: var(--font-counter-numbers);
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0 80px;
+}
+
+.single-project-page .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: start !important;
+    padding: 0;
+    gap: 0;
+}
+
+.single-project-page .contact-details .contact-details-item {
+    width: 25% !important;
+    padding: 20px 80px !important;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border-line-3) !important;
+}
+
+.single-project-page .contact-details .contact-details-item .content-subtitle {
+    color: var(--color-text) !important;
+}
+
+.single-hero-btn {
+    padding: 0 80px;
+}
+
+
+/* ===========================================
+            Hero Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+           About Styling Start Here
+=========================================== */
+.single-project-page .project-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-project-page .project-page-wrapper .single-about-project-details {
+    font-size: var(--font-about-us-story-text);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--color-story-text-1);
+    width: 82%;
+    text-align: center;
+    align-self: center;
+}
+
+.img-content-wrapper {
+    display: flex;
+    gap: 80px;
+}
+
+.img-content-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.img-content-wrapper .single-img-1 {
+    width: 30%;
+    clip-path: shape(from calc(100% - 20px) 0%,
+            hline to 0%,
+            vline to 100%,
+            hline to 100%,
+            vline to 20px,
+            line to calc(100% - 20px) 20px,
+            close);
+}
+
+.img-content-wrapper .single-img-2 {
+    margin-top: 100px;
+    width: 30%;
+    clip-path: shape(from 20px 0%,
+            hline to 100%,
+            vline to 100%,
+            line to 0% 100%,
+            line to 0% 20px,
+            line to 20px 20px,
+            close);
+}
+
+.single-content-wrapper {
+    width: 40%;
+}
+
+.single-content-wrapper p {
+    font-family: "TT Lakes Neue Trial", sans-serif;
+    font-size: var(--font-subtitle);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.single-content-wrapper h2 {
+    font-size: 112px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+}
+
+.single-project-page .project-details-subtitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.single-project-page .project-details-subtitle .achievements-card-shape {
+    background: var(--color-text) !important;
+}
+
+.single-project-page .project-details-subtitle .project-details-subtitle-text {
+    font-size: var(--font-counter-text);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--color-text) !important;
+}
+
+/* ===========================================
+           About Styling End Here
+=========================================== */
+
+
+
+
+/* ===========================================
+        Single Gallery Styling Start Here
+=========================================== */
+
+.single-gallery .project-wrapper {
+    padding-top: 40px;
+}
+
+.single-gallery .project-content-upper {
+    border-top: 1px solid var(--color-border-line-3);
+}
+
+
+
+/* ===========================================
+       Single Gallery Styling Start Here
+=========================================== */
+
+.single-gallery .project-content-title {
+    font-size: clamp(45px, calc(47px + (208 - 47) * ((100vw - 375px) / (1440 - 375))), 204px);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2em;
+    letter-spacing: 0.04em;
+    padding: 0 80px 15px 80px;
+    border-bottom: 1px solid var(--color-border-line-3);
+}
+
+
+/* ===========================================
+       Single Gallery Styling End Here
+=========================================== */
+
+
+
+/* ===========================================
+    Single Projecty CTA Styling Start Here
+=========================================== */
+
+.single-project-page .spacing {
+    height: 50px;
+}
+
+.single-project-page .achievements-wrapper::before {
+    background: url(../media/img/single-service-cta.webp) center / cover no-repeat;
+}
+
+.single-project-page .achievements-card {
+    width: 47%;
+    padding: 30px 40px 30px 65px;
+    ;
+}
+
+/* ===========================================
+    Single Projecty CTA Styling End Here
+=========================================== */
+
+
+/* ===========================================
+    Related Projects Styling Start Here
+=========================================== */
+
+.single-project-page .project-slider {
+    background: var(--color-secondary) !important;
+}
+
+.single-project-page .project-slide-arrow {
+    background: var(--color-secondary) !important;
+    position: relative;
+    clip-path: shape(from 0% 0%,
+            line to 100% 0%,
+            line to 100% 86%,
+            line to 98% 86%,
+            line to 98% 100%,
+            line to 2% 100%,
+            line to 2% 86%,
+            line to 0% 86%,
+            close);
+}
+
+/* ===========================================
+    Related Projects Styling End Here
+=========================================== */

@@ -116,9 +116,7 @@ document.querySelectorAll('.finition-tabs').forEach(function (section) {
 /* ===========================================
       Splide Js  Carrier Gallery  Slider 
 =========================================== */
-/* ===========================================
-          Splide Js Member Slider
-=========================================== */
+
 window.addEventListener('load', function () {
   var splide = new Splide('.carrier-gallery-slider', {
     type: 'loop',
@@ -130,7 +128,7 @@ window.addEventListener('load', function () {
     drag: true,
     trimSpace: false,
     autoScroll: {
-      speed: 1.5, // Adjust speed as needed
+      speed: 1.5, 
       pauseOnHover: true,
       pauseOnFocus: false,
     },
@@ -141,50 +139,49 @@ window.addEventListener('load', function () {
 
 
 
-
 /* ===========================================
             Job Application Popup
 =========================================== */
 (function () {
-    var overlay = document.querySelector('.job-popup-overlay');
-    var popupTitle = document.querySelector('.job-popup-title');
-    var closeBtn = document.querySelector('.job-popup-close');
-    var applyButtons = document.querySelectorAll('.carrier-job-btn .btn-devis');
+  var overlay = document.querySelector('.job-popup-overlay');
+  var popupTitle = document.querySelector('.job-popup-title');
+  var closeBtn = document.querySelector('.job-popup-close');
+  var applyButtons = document.querySelectorAll('.carrier-job-btn .btn-devis');
 
-    if (!overlay || !applyButtons.length) return;
+  if (!overlay || !applyButtons.length) return;
 
-    applyButtons.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            e.preventDefault();
+  applyButtons.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
 
-            var jobItem = btn.closest('.carrier-jobs-item');
-            if (!jobItem) return;
+      var jobItem = btn.closest('.carrier-jobs-item');
+      if (!jobItem) return;
 
-            var title = jobItem.querySelector('.carrier-jobs-title');
+      var title = jobItem.querySelector('.carrier-jobs-title');
 
-            popupTitle.textContent = title ? title.textContent : '';
+      popupTitle.textContent = title ? title.textContent : '';
 
-            overlay.classList.add('open');
-            document.body.style.overflow = 'hidden';
-        });
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
     });
+  });
 
-    closeBtn.addEventListener('click', function () {
-        overlay.classList.remove('open');
-        document.body.style.overflow = '';
-    });
+  closeBtn.addEventListener('click', function () {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  });
 
-    overlay.addEventListener('click', function (e) {
-        if (e.target === overlay) {
-            overlay.classList.remove('open');
-            document.body.style.overflow = '';
-        }
-    });
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
 
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && overlay.classList.contains('open')) {
-            overlay.classList.remove('open');
-            document.body.style.overflow = '';
-        }
-    });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
 })();
